@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const aa = 333 + 333 + 333 + 333 + 333 + 333 + 333 + 333 + 333 + 333 + 333;
-console.log("aaa");
+console.log("aaaa");
 </script>
 
 <template>
