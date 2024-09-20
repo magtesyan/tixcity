@@ -7,11 +7,30 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "prettier": "prettier . --check",
+    "test": "eslint . && prettier --list-different .",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.2",
+    "typescript": "latest"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,scss}": [
+      "eslint",
+      "prettier --list-different"
+    ]
   }
 }

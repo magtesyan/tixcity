@@ -1,7 +1,4 @@
-<script setup lang="ts">
-console.log("aaaa");
-fff;
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
