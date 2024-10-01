@@ -5,8 +5,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/eslint"],
   eslint: {
-    config: {
-      stylistic: true,
-    },
+    // config: {
+    //   stylistic: true,
+    // },
   },
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
 });
