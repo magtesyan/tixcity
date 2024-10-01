@@ -1,18 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
-  css: ['~/assets/scss/main.scss'],
+  compatibilityDate: "2024-04-03",
+  css: ["~/assets/scss/main.scss"],
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint'],
+  modules: ["@nuxt/eslint"],
   eslint: {
-    config: {
-      stylistic: true,
-    },
+    // config: {
+    //   stylistic: true,
+    // },
   },
   components: [
     {
-      path: '~/components',
+      path: "~/components",
       pathPrefix: false,
     },
   ],
-})
+});
