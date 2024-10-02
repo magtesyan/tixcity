@@ -1,6 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 // Variables
 $backgroud: #181818;
 
+//global
+.content-container {
+  width: 296px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 body {
   background-color: $backgroud;
+  margin: 0;
 }
