@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h2>Главная</h2>
-  </div>
+  <main class="main">
+    <appSlider />
+    <appCategory />
+  </main>
 </template>
 
 <script setup></script>

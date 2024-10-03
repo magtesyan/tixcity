@@ -61,11 +61,16 @@
 }
 
 .navbar__item-link {
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
+}
+
+.navbar__item-link img {
+  margin-bottom: 5px;
 }
 
 .navbar__link-title {
