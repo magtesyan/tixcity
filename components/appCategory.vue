@@ -1,31 +1,16 @@
 <template>
-  <section class="category">
-    <div class="category__container">
-      <div class="category__background">
-        <ul class="category__list">
-          <li class="category__item item-1">
-            <NuxtLink class="category__link" to="/teathre/teathre">
-              <span class="category__link-title">Театр</span>
-            </NuxtLink>
-          </li>
-          <li class="category__item item-2">
-            <NuxtLink class="category__link" to="/child/children">
-              <span class="category__link-title">Дети</span>
-            </NuxtLink>
-          </li>
-          <li class="category__item item-3">
-            <NuxtLink class="category__link" to="/sport/sport">
-              <span class="category__link-title">Спорт</span>
-            </NuxtLink>
-          </li>
-          <li class="category__item item-4">
-            <NuxtLink class="category__link" to="/stage/stage">
-              <span class="category__link-title">Эстрада</span>
-            </NuxtLink>
-          </li>
-          <li class="category__item item-5">
-            <NuxtLink class="category__link" to="/opera/opera">
-              <span class="category__link-title">Опера</span>
+  <section class="categories">
+    <div class="categories__container">
+      <div class="categories__background">
+        <ul class="categories__list">
+          <li
+            class="categories__item"
+            v-for="(category, index) in categories"
+            :key="index"
+            :class="`item-${index + 1}`"
+          >
+            <NuxtLink class="categories__link" to="/teathre/teathre">
+              <span class="categories__link-title">{{ category.name }}</span>
             </NuxtLink>
           </li>
         </ul>
@@ -34,15 +19,23 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const categories = [
+  { name: "Театры", value: "teathre" },
+  { name: "Дети", value: "children" },
+  { name: "Спорт", value: "sport" },
+  { name: "Эстрада", value: "stage" },
+  { name: "Опера", value: "opera" },
+];
+</script>
 
 <style lang="scss">
-.category__container {
+.categories__container {
   width: 92.5%;
   margin: 0 auto;
 }
 
-.category__background {
+.categories__background {
   background: rgb(93, 93, 93, 30%);
   backdrop-filter: blur(5px);
   width: 100%;
@@ -50,7 +43,7 @@
   border-radius: 10px;
 }
 
-.category__list {
+.categories__list {
   padding: 12px;
   margin: 0;
   list-style-type: none;
@@ -60,32 +53,7 @@
   gap: 10px;
 }
 
-.item-1 {
-  grid-area: 1 / 1 / 2 / 4;
-  background-color: rgba(19, 19, 19, 0.502);
-  min-height: 36px;
-}
-.item-2 {
-  min-height: 55px;
-  grid-area: 2/1/3/2;
-  background-color: rgba(19, 19, 19, 0.502);
-}
-.item-3 {
-  min-height: 55px;
-  grid-area: 2/2/3/3;
-  background-color: rgba(19, 19, 19, 0.502);
-}
-.item-4 {
-  min-height: 55px;
-  grid-area: 2/3/3/4;
-  background-color: rgba(19, 19, 19, 0.502);
-}
-.item-5 {
-  grid-area: 3 / 1 / 4 / 4;
-  background-color: rgba(19, 19, 19, 0.502);
-}
-
-.category__link {
+.categories__link {
   display: flex;
   height: 100%;
   justify-content: center;
@@ -94,7 +62,49 @@
   color: #ffffff;
 }
 
-.category__link-title {
+.categories__link-title {
   display: block;
+}
+
+.item-1 {
+  background-color: #59b77a;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+
+.item-2 {
+  background-color: #7ef5dc;
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.item-3 {
+  background-color: #9f9ba8;
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.item-4 {
+  background-color: #5bedb9;
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+.item-5 {
+  background-color: #a7fcdb;
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
 }
 </style>
