@@ -4,11 +4,11 @@ export default defineNuxtConfig({
   css: ["~/assets/scss/main.scss"],
   devtools: { enabled: true },
   modules: ["@nuxt/eslint"],
-  eslint: {
-    // config: {
-    //   stylistic: true,
-    // },
-  },
+  // eslint: {
+  //   // config: {
+  //   //   stylistic: true,
+  //   // },
+  // },
   components: [
     {
       path: "~/components",

@@ -10,9 +10,9 @@
 
 <style lang="scss">
 .wrapper {
-  padding-top: 12px;
   height: 100vh;
-  background-image: url(../public/img/screen-background/backgtound-first.jpg);
+  width: 100%;
+  background-image: url(../public/img/screen-background/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

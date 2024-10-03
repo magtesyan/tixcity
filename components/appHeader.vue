@@ -1,14 +1,15 @@
 <template>
   <header class="header">
     <div class="header__container">
-      <div class="header__background"></div>
-      <img
-        class="header__logo logo"
-        src="../public/img/logo/logo-mobile.svg"
-        width="104"
-        height="53"
-        alt="Логотип сайта по продаже билетов"
-      />
+      <div class="header__background">
+        <img
+          class="header__logo logo"
+          src="../public/img/logo/logo-mobile.svg"
+          width="104"
+          height="53"
+          alt="Логотип сайта по продаже билетов"
+        />
+      </div>
     </div>
   </header>
 </template>
@@ -28,20 +29,17 @@
 }
 
 .header__container {
-  position: relative;
   width: 296px;
   margin: 0 auto;
-  padding: 0 5px;
-  border-radius: 10px;
+  padding: 15px 5px;
 }
 
 .header__background {
   background: rgb(93, 93, 93, 30%);
   backdrop-filter: blur(5px);
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 56px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 </style>
