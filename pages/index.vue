@@ -1,10 +1,14 @@
 <template>
   <main class="main">
-    <appSlider />
-    <appCategory />
+    <TheSlider />
+    <TheCategories />
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: "default",
+});
+</script>
 
 <style lang="scss"></style>
