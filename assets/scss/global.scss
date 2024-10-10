@@ -33,12 +33,12 @@
   color: $primaryColor;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
+// img {
+//   width: 100%;
+//   display: block;
+// }
 
-._visualyHidden {
+.visualyHidden {
   position: absolute;
   width: 1px;
   height: 1px;

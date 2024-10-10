@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .navbarItemLink {
@@ -83,9 +84,5 @@
 
 .navbarLinkIcon {
   margin-bottom: 5px;
-}
-
-.navbar__link-title {
-  display: block;
 }
 </style>

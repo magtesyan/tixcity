@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <h2 class="_visualyHidden">Слайдер</h2>
+    <h2 class="visualyHidden">Слайдер</h2>
     <div class="content">
       <div class="overlayBlur">
         <ul class="sliderList list">
