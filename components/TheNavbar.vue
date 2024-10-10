@@ -1,9 +1,10 @@
 <template>
   <nav class="navbar">
-    <ul class="navbar__list">
-      <li class="navbar__item">
-        <NuxtLink class="navbar__item-link" to="/">
+    <ul class="navbarList list">
+      <li class="navbarItem">
+        <NuxtLink class="navbarItemLink link" to="/">
           <img
+            class="navbarLinkIcon"
             src="/public/img/icons/house.svg"
             height="24"
             width="24"
@@ -12,27 +13,39 @@
           <span class="navbar__link-title">домой</span>
         </NuxtLink>
       </li>
-      <li class="navbar__item">
-        <NuxtLink class="navbar__item-link" to="/opera/opera">
+      <li class="navbarItem">
+        <NuxtLink class="navbarItemLink link" to="/opera/opera">
           <img
+            class="navbarLinkIcon"
             src="/public/img/icons/сalendar.svg"
+            height="24"
+            width="24"
             alt="Календарь для выбора нужной даты"
           />
           <span class="navbar__link-title">календарь</span>
         </NuxtLink>
       </li>
-      <li class="navbar__item">
-        <NuxtLink class="navbar__item-link" to="/opera/opera">
+      <li class="navbarItem">
+        <NuxtLink class="navbarItemLink link" to="/opera/opera">
           <img
+            class="navbarLinkIcon"
             src="/public/img/icons/сalendar.svg"
+            height="24"
+            width="24"
             alt="Календарь для выбора нужной даты"
           />
           <span class="navbar__link-title">календарь</span>
         </NuxtLink>
       </li>
-      <li class="navbar__item">
-        <NuxtLink class="navbar__item-link" to="79161111703">
-          <img src="/public/img/icons/phone.svg" alt="Позвонить" />
+      <li class="navbarItem">
+        <NuxtLink class="navbarItemLink link" to="79161111703">
+          <img
+            class="navbarLinkIcon"
+            src="/public/img/icons/phone.svg"
+            height="24"
+            width="24"
+            alt="Позвонить"
+          />
           <span class="navbar__link-title">позвонить</span>
         </NuxtLink>
       </li>
@@ -46,34 +59,30 @@
 .navbar {
   width: 100%;
 }
-.navbar__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.navbarList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding: 0 10px;
 }
 
-.navbar__item {
+.navbarItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.navbar__item-link {
+.navbarItemLink {
   font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #ffffff;
+  color: $primaryColor;
+  padding: 10px 15px;
 }
 
-.navbar__item-link img {
+.navbarLinkIcon {
   margin-bottom: 5px;
-}
-
-.navbar__link-title {
-  display: block;
 }
 </style>

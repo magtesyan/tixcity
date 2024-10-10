@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <appHeader />
+    <TheHeader />
     <slot />
-    <appFooter />
+    <TheFooter />
   </div>
 </template>
 
