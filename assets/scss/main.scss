@@ -1,6 +1,8 @@
-// Variables
-$backgroud: #181818;
+@import "variables";
+@import "global";
 
 body {
-  background-color: $backgroud;
+  background-color: $background;
+  margin: 0;
+  height: 100vh;
 }

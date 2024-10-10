@@ -1,9 +1,14 @@
 <template>
-  <div>
-    <h2>Главная</h2>
-  </div>
+  <main class="main">
+    <TheSlider />
+    <TheCategories />
+  </main>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: "default",
+});
+</script>
 
 <style lang="scss"></style>
