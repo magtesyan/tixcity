@@ -6,7 +6,7 @@
         <ul class="sliderList list">
           <li class="sliderItem">
             <img
-              class="slider-item"
+              class="sliderItemImg"
               src="/public/img/cover-cites/lenkom.jpg"
               width="272"
               height="216"
@@ -21,4 +21,12 @@
 
 <script setup></script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.sliderList {
+  padding: 0;
+}
+
+.sliderItemImg {
+  width: 100%;
+}
+</style>

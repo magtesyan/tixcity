@@ -24,7 +24,7 @@
 }
 
 .headerContent {
-  padding: 20px 12px 15px;
+  padding: 15px 12px 15px;
 }
 
 .logo {
