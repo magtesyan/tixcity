@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <TheSlider />
-    <TheCategories />
+    <Categories />
   </main>
 </template>
 

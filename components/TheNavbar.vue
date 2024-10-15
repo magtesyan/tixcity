@@ -38,7 +38,7 @@
         </NuxtLink>
       </li>
       <li class="navbarItem">
-        <NuxtLink class="navbarItemLink link" to="79161111703">
+        <NuxtLink class="navbarItemLink link">
           <img
             class="navbarLinkIcon"
             src="/public/img/icons/phone.svg"

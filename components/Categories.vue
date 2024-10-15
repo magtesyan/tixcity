@@ -20,13 +20,8 @@
 </template>
 
 <script setup>
-const categories = [
-  { name: "Театры", value: "teathre" },
-  { name: "Дети", value: "children" },
-  { name: "Спорт", value: "sport" },
-  { name: "Эстрада", value: "stage" },
-  { name: "Опера", value: "opera" },
-];
+import data from "./../assets/data/categories.json";
+const categories = data.categories;
 </script>
 
 <style lang="scss">
