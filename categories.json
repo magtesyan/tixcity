@@ -1,9 +1,0 @@
-{
-  "categories": [
-    { "name": "Театры", "value": "teathre" },
-    { "name": "Дети", "value": "children" },
-    { "name": "Спорт", "value": "sport" },
-    { "name": "Эстрада", "value": "stage" },
-    { "name": "Опера", "value": "opera" }
-  ]
-}
