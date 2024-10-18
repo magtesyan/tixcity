@@ -1,17 +1,36 @@
 <template>
-  <div>
-    <h2>{{ category.title }}</h2>
+  <section class="section">
+    <h2 class="visualyHidden">category.title</h2>
+    <NuxtLink to="/theaters" class="link">Назад</NuxtLink>
+    <h2 class="sectionTitle title">Афиша</h2>
+    <h3 class="monthTitle title">Ноябрь</h3>
+
     <ul class="eventsList list">
       <li v-for="event in repertoire" :key="event.eventPath" class="eventsItem">
-        <NuxtLink
-          :to="`/${category}/${venues}/${event.eventPath}`"
-          class="eventsLink link"
-        >
-          {{ event.title }} - {{ formatDate(event.date) }}
-        </NuxtLink>
+        <div class="content">
+          <div class="overlayBlur">
+            <div class="descEvent">
+              <img
+                src="/public/img/cover-cites/lenkom.jpg"
+                width="100"
+                height="100"
+                alt=""
+              />
+              <p>{{ formatDate(event.day) }}</p>
+            </div>
+            <NuxtLink
+              :to="`/${category}/${venues}/${event.eventPath}`"
+              class="eventsLink link"
+            >
+              <h3 class="eventCardTitle title">
+                {{ event.title }}
+              </h3>
+            </NuxtLink>
+          </div>
+        </div>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -25,9 +44,37 @@ const venues = route.params.venue;
 const repertoire = repertoireDate[venues] || [];
 
 function formatDate(dataStr) {
-  const option = { year: "numeric", month: "long", day: "numeric" };
+  const option = { month: "long", day: "numeric" };
   return new Date(dataStr).toLocaleDateString("ru-RU", option);
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.eventCardTitle {
+  text-align: center;
+}
+.eventsList {
+  padding: 0;
+}
+
+.eventsItem {
+  margin-bottom: 15px;
+}
+
+.eventsLink {
+  width: 100%;
+  padding: 5px;
+}
+
+.descEvent {
+  position: relative;
+}
+
+.eventDate {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 22px;
+  text-align: center;
+}
+</style>

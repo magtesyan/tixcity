@@ -1,15 +1,19 @@
 <template>
-  <div>
-    <h2>{{ categoryTitle }}</h2>
-    <ul>
-      <li v-for="venue in venues" :key="venue.path">
-        <NuxtLink :to="`/${category}/${venue.path}`">
-          <h2>{{ venue.name }}</h2>
-          <p>{{ venue.description }}</p>
-        </NuxtLink>
+  <section class="section">
+    <h2 class="visualyHidden">{{ categoryTitle }}</h2>
+    <ul class="venueList list">
+      <li v-for="venue in venues" :key="venue.path" class="venueItem">
+        <div class="content">
+          <div class="overlayBlur">
+            <NuxtLink :to="`/${category}/${venue.path}`" class="venueLink link">
+              <h2 class="venueTitle title">{{ venue.name }}</h2>
+              <p class="venueDesc text">{{ venue.description }}</p>
+            </NuxtLink>
+          </div>
+        </div>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -30,4 +34,17 @@ const categoryTitle =
   }[category] || Рубрика;
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.venueList {
+  padding: 0;
+}
+
+.venueItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.venueLink {
+  width: 100%;
+  padding: 15px 10px;
+}
+</style>
