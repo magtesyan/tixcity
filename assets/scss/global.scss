@@ -6,6 +6,24 @@
   margin: 0;
 }
 
+.text {
+  margin: 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.monthTitle {
+  text-align: center;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .overlayBlur {
   background: rgb(93, 93, 93, 30%);
   backdrop-filter: blur(5px);
@@ -31,11 +49,6 @@
   text-decoration: none;
   color: $primaryColor;
 }
-
-// img {
-//   width: 100%;
-//   display: block;
-// }
 
 .visualyHidden {
   position: absolute;

@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <TheSlider />
+    <Slider />
     <Categories />
   </main>
 </template>

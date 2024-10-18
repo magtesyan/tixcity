@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="content">
-      <TheNavbar />
+      <Navbar />
     </div>
   </footer>
 </template>

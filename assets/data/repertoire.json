@@ -1,0 +1,290 @@
+{
+  "lenkom": [
+    {
+      "title": "Доходное место",
+      "date": "2023-11-01",
+      "eventPath": "Доходное место"
+    },
+    {
+      "title": "Юнона и Авось",
+      "date": "2023-11-02",
+      "eventPath": "show-56"
+    },
+    {
+      "title": "Королевские игры",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "Гамлет",
+      "date": "2023-11-05",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "Гамлет",
+      "date": "2023-11-06",
+      "eventPath": "show-5"
+    },
+    {
+      "title": "Вишневый сад",
+      "date": "2023-11-07",
+      "eventPath": "show-6"
+    },
+    {
+      "title": "Старомодная комедия",
+      "date": "2023-11-08",
+      "eventPath": "show-7"
+    },
+    {
+      "title": "Бег",
+      "date": "2023-11-09",
+      "eventPath": "show-8"
+    }
+  ],
+  "mhatChehova": [
+    {
+      "title": "Авлабар, или Новая Ханума",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "Авлабар, или Новая Ханума",
+      "date": "2023-11-02",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "Три сестры",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "Враки, или Завещание барона Мюнхгаузена",
+      "date": "2023-11-04",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "Серёжа",
+      "date": "2023-11-05",
+      "eventPath": "show-5"
+    },
+    {
+      "title": "Дядя Ваня",
+      "date": "2023-11-06",
+      "eventPath": "show-6"
+    },
+    {
+      "title": "Самоубийца",
+      "date": "2023-11-07",
+      "eventPath": "show-7"
+    },
+    {
+      "title": "Бег",
+      "date": "2023-11-08",
+      "eventPath": "show-8"
+    }
+  ],
+  "vathtangova": [
+    {
+      "title": "Повести Пушкина",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "Кот в сапогах",
+      "date": "2023-11-02",
+      "time": "12:00",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "Маскарад",
+      "date": "2023-11-02",
+      "time": "19:00",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "Евгений Онегин",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "Обыкновенное чудо",
+      "date": "2023-11-04",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "Мадемуазель Нитуш",
+      "date": "2023-11-05",
+      "eventPath": "show-5"
+    },
+    {
+      "title": "Мадемуазель Нитуш",
+      "date": "2023-11-06",
+      "eventPath": "show-6"
+    },
+    {
+      "title": "Мертвые души",
+      "date": "2023-11-07",
+      "eventPath": "show-7"
+    },
+    {
+      "title": "Амадей",
+      "date": "2023-11-08",
+      "eventPath": "show-8"
+    }
+  ],
+  "naciy": [
+    {
+      "title": "НА ВСЯКОГО МУДРЕЦА",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "НА ВСЯКОГО МУДРЕЦА",
+      "date": "2023-11-02",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "БОВАРИ",
+      "date": "2023-11-04",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "БОВАРИ",
+      "date": "2023-11-05",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "МУ-МУ",
+      "date": "2023-11-09",
+      "eventPath": "show-5"
+    },
+    {
+      "title": "МУ-МУ",
+      "date": "2023-11-10",
+      "eventPath": "show-6"
+    },
+    {
+      "title": "БОРИС ГОДУНОВ",
+      "date": "2023-11-11",
+      "eventPath": "show-7"
+    },
+    {
+      "title": "БОРИС ГОДУНОВ",
+      "date": "2023-11-12",
+      "eventPath": "show-8"
+    }
+  ],
+  "vernadskogo-cirq": [
+    {
+      "title": "Легенда",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "Легенда",
+      "date": "2023-11-02",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "Легенда",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "легенда",
+      "date": "2023-11-04",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "Легенда",
+      "date": "2023-11-05",
+      "eventPath": "show-5"
+    },
+    {
+      "title": "Легенда",
+      "date": "2023-11-06",
+      "eventPath": "show-6"
+    },
+    {
+      "title": "Легенда",
+      "date": "2023-11-07",
+      "eventPath": "show-7"
+    },
+    {
+      "title": "Легенда",
+      "date": "2023-11-08",
+      "eventPath": "show-8"
+    }
+  ],
+  "nikulina-cirkue": [
+    {
+      "title": "Матрешка",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "Матрешка",
+      "date": "2023-11-02",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "Матрешка",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    }
+  ],
+  "xxc": [
+    {
+      "title": "Матрешка",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "Матрешка",
+      "date": "2023-11-02",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "Матрешка",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "Матрешка",
+      "date": "2023-11-04",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "Матрешка",
+      "date": "2023-11-05",
+      "eventPath": "show-5"
+    }
+  ],
+  "ugolokdurova": [
+    {
+      "title": "ЧЕБАРАТОР",
+      "date": "2023-11-01",
+      "eventPath": "show-1"
+    },
+    {
+      "title": "ЧЕБАРАТОР",
+      "date": "2023-11-02",
+      "eventPath": "show-2"
+    },
+    {
+      "title": "ЧЕБАРАТОР",
+      "date": "2023-11-03",
+      "eventPath": "show-3"
+    },
+    {
+      "title": "ЧЕБАРАТОР",
+      "date": "2023-11-04",
+      "eventPath": "show-4"
+    },
+    {
+      "title": "ЧЕБАРАТОР",
+      "date": "2023-11-05",
+      "eventPath": "show-5"
+    }
+  ]
+}
