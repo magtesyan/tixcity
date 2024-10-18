@@ -9,7 +9,7 @@
             :key="index"
             class="categoriesItem"
           >
-            <NuxtLink class="categoriesLink link" to="/teathre/teathre">
+            <NuxtLink class="categoriesLink link" :to="category.path">
               <span class="categoriesLinkTitle">{{ category.name }}</span>
             </NuxtLink>
           </li>
@@ -20,8 +20,13 @@
 </template>
 
 <script setup>
-import data from "./../assets/data/categories.json";
-const categories = data.categories;
+const categories = [
+  { name: "Театр", path: "/theaters" },
+  { name: "Дети", path: "/kids" },
+  { name: "Спорт", path: "/sport" },
+  { name: "Эстрада", path: "/stage" },
+  { name: "Опера и балет", path: "/opera" },
+];
 </script>
 
 <style lang="scss">
