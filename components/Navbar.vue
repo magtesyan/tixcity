@@ -62,7 +62,7 @@
 .navbarList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 10px;
+  padding: 0;
 }
 
 .navbarItem {
