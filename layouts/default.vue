@@ -44,26 +44,26 @@ const backgroundClass = computed(() => {
   height: 100vh;
 
   &_default {
-    background-image: url("/public/img/screen-background/default.png");
+    background-image: $bg-default;
   }
   &_theaters {
-    background-image: url("/public/img/screen-background/theater.png");
+    background-image: $bg-theaters;
   }
 
   &_kids {
-    background-image: url("/public/img/screen-background/bg-cirqe.jpg");
+    background-image: $bg-kids;
   }
 
   &_sport {
-    background-image: url("/public/img/screen-background/bg-sport.jpg");
+    background-image: $bg-sport;
   }
 
   &_stage {
-    background-image: url("/public/img/screen-background/bg-stage.jpg");
+    background-image: $bg-stage;
   }
 
   &_opera {
-    background-image: url("/public/img/screen-background/bg-opera.png");
+    background-image: $bg-opera;
   }
 }
 </style>
