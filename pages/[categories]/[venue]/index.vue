@@ -16,7 +16,7 @@
                 height="100"
                 alt=""
               />
-              <p>{{ formatDate(event.day) }}</p>
+              <p class="eventDay">{{ formatDate(event.day) }}</p>
             </div>
             <NuxtLink
               :to="`/${category}/${venues}/${event.eventPath}`"

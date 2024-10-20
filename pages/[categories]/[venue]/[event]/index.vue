@@ -6,7 +6,7 @@
     <p><strong>Дата: </strong>{{ formatDate(event.date) }}</p>
     <p><strong>Время:</strong>{{ event.time }}</p>
     <p>{{ event.description }}</p>
-    <h3>LДействующие лица:</h3>
+    <h3>Действующие лица:</h3>
     <ul>
       <li v-for="actor in event.cast" :key="actor">
         {{ actor }}

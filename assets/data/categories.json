@@ -1,0 +1,9 @@
+{
+  "categories": [
+    { "name": "Театр", "path": "/theaters" },
+    { "name": "Дети", "path": "/kids" },
+    { "name": "Спорт", "path": "/sport" },
+    { "name": "Эстрада", "path": "/stage" },
+    { "name": "Опера и балет", "path": "/opera" }
+  ]
+}

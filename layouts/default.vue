@@ -16,17 +16,17 @@ const category = route.params.categories;
 const backgroundClass = computed(() => {
   switch (category) {
     case "theaters":
-      return "bg-theaters";
+      return "bg bg_theaters";
     case "kids":
-      return "bg-kids";
+      return "bg bg_kids";
     case "sport":
-      return "bg-sport";
+      return "bg bg_sport";
     case "stage":
-      return "bg-stage";
+      return "bg bg_stage";
     case "opera":
-      return "bg-opera";
+      return "bg bg_opera";
     default:
-      return "bg-default";
+      return "bg bg_default";
   }
 });
 </script>
@@ -37,51 +37,33 @@ const backgroundClass = computed(() => {
   width: 100%;
 }
 
-.bg-theaters {
-  background-image: url("/public/img/screen-background/theater.png");
+.bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
 
-.bg-kids {
-  background-image: url("/public/img/screen-background/bg-cirqe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+  &_default {
+    background-image: url("/public/img/screen-background/default.png");
+  }
+  &_theaters {
+    background-image: url("/public/img/screen-background/theater.png");
+  }
 
-.bg-sport {
-  background-image: url("/public/img/screen-background/bg-sport.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+  &_kids {
+    background-image: url("/public/img/screen-background/bg-cirqe.jpg");
+  }
 
-.bg-stage {
-  background-image: url("/public/img/screen-background/bg-stage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+  &_sport {
+    background-image: url("/public/img/screen-background/bg-sport.jpg");
+  }
 
-.bg-opera {
-  background-image: url("/public/img/screen-background/bg-opera.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+  &_stage {
+    background-image: url("/public/img/screen-background/bg-stage.jpg");
+  }
 
-.bg-default {
-  background-image: url("/public/img/screen-background/default.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  &_opera {
+    background-image: url("/public/img/screen-background/bg-opera.png");
+  }
 }
 </style>
