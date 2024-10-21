@@ -5,11 +5,11 @@
       <div class="overlayBlur">
         <ul class="categoriesList list">
           <li
-            v-for="(category, index) in categories"
-            :key="index"
+            v-for="category in categories"
+            :key="category.path"
             class="categoriesItem"
           >
-            <NuxtLink class="categoriesLink link" to="/teathre/teathre">
+            <NuxtLink class="categoriesLink link" :to="category.path">
               <span class="categoriesLinkTitle">{{ category.name }}</span>
             </NuxtLink>
           </li>
@@ -20,8 +20,8 @@
 </template>
 
 <script setup>
-import data from "./../assets/data/categories.json";
-const categories = data.categories;
+import categoriesData from "../assets/data/categories.json";
+const categories = categoriesData.categories;
 </script>
 
 <style lang="scss">
@@ -31,7 +31,7 @@ const categories = data.categories;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .categoriesItem:first-child,
@@ -48,7 +48,7 @@ const categories = data.categories;
 
 .categoriesLinkTitle {
   display: block;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .categoriesLink {
