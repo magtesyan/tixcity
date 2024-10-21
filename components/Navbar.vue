@@ -79,7 +79,7 @@
   align-items: center;
   text-decoration: none;
   color: $primaryColor;
-  padding: 10px 15px;
+  padding: 5px 0;
 }
 
 .navbarLinkIcon {

@@ -31,7 +31,7 @@ const categories = categoriesData.categories;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .categoriesItem:first-child,
@@ -48,7 +48,7 @@ const categories = categoriesData.categories;
 
 .categoriesLinkTitle {
   display: block;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .categoriesLink {
