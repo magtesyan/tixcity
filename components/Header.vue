@@ -28,6 +28,7 @@
 }
 
 .logo {
+  padding: 10px 0;
   display: block;
 }
 </style>

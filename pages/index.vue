@@ -1,8 +1,8 @@
 <template>
-  <main class="main">
+  <div>
     <Slider />
     <Categories />
-  </main>
+  </div>
 </template>
 
 <script setup>

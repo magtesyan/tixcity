@@ -47,6 +47,9 @@ const categories = categoriesData.categories;
 }
 
 .categoriesLinkTitle {
+  font-family: "Prata";
+  @include font(1rem, 19px, 500);
+  letter-spacing: 0.03rem;
   display: block;
   padding: 20px 0;
 }

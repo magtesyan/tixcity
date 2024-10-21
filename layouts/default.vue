@@ -1,10 +1,10 @@
 <template>
-  <div class="wrapper">
-    <div :class="backgroundClass">
-      <Header />
+  <div :class="backgroundClass">
+    <Header />
+    <main class="main">
       <slot />
-      <Footer />
-    </div>
+    </main>
+    <Footer />
   </div>
 </template>
 
@@ -20,11 +20,6 @@ const backgroundClass = computed(() => {
 </script>
 
 <style lang="scss">
-.wrapper {
-  height: 100vh;
-  width: 100%;
-}
-
 $bg: no-repeat, center, cover;
 $bg-default: url("/public/img/screen-background/default.png");
 $bg-theaters: url("/public/img/screen-background/theater.png");
@@ -37,7 +32,10 @@ $bg-opera: url("/public/img/screen-background/theater.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   &_default {
     background-image: $bg-default;
