@@ -10,24 +10,12 @@
 
 <script setup>
 import { useRoute } from "vue-router";
+import { computed } from "vue";
 
 const route = useRoute();
-const category = route.params.categories;
 const backgroundClass = computed(() => {
-  switch (category) {
-    case "theaters":
-      return "bg bg_theaters";
-    case "kids":
-      return "bg bg_kids";
-    case "sport":
-      return "bg bg_sport";
-    case "stage":
-      return "bg bg_stage";
-    case "opera":
-      return "bg bg_opera";
-    default:
-      return "bg bg_default";
-  }
+  const category = route.params.categories || "default";
+  return `bg bg_${category}`;
 });
 </script>
 
@@ -36,6 +24,14 @@ const backgroundClass = computed(() => {
   height: 100vh;
   width: 100%;
 }
+
+$bg: no-repeat, center, cover;
+$bg-default: url("/public/img/screen-background/default.png");
+$bg-theaters: url("/public/img/screen-background/theater.png");
+$bg-kids: url("/public/img/screen-background/bg-cirqe.jpg");
+$bg-sport: url("/public/img/screen-background/bg-sport.jpg");
+$bg-stage: url("/public/img/screen-background/bg-stage.jpg");
+$bg-opera: url("/public/img/screen-background/theater.png");
 
 .bg {
   background-repeat: no-repeat;
