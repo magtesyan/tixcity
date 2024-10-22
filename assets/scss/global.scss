@@ -9,7 +9,8 @@
 }
 
 .title {
-  margin: 0;
+  display: block;
+  text-align: center;
 }
 
 .text {
@@ -50,7 +51,6 @@
 }
 
 .link {
-  width: 100%;
   text-decoration: none;
   color: $primaryColor;
   cursor: pointer;

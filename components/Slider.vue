@@ -28,5 +28,7 @@
 
 .sliderItemImg {
   width: 100%;
+  min-height: 216px;
+  height: 100%;
 }
 </style>
