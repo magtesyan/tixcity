@@ -8,7 +8,11 @@
 
 <style lang="scss">
 .footer {
-  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  bottom: 0;
   background: $background-primary;
 }
 </style>

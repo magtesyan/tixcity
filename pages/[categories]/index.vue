@@ -66,12 +66,13 @@ const categoryTitle =
 .venueLink {
   display: flex;
   flex-direction: column;
-  padding: 15px 10px;
+  padding: 10px 15px;
 }
 
 .venueImage {
   width: 100%;
   height: auto;
+  min-height: 150px;
   margin-bottom: 15px;
 
   box-shadow: 7px 15px 10px -5px black;

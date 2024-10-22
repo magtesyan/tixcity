@@ -1,10 +1,12 @@
 <template>
   <div :class="backgroundClass">
-    <Header />
-    <main class="main">
-      <slot />
-    </main>
-    <Footer />
+    <div class="wrapperApp">
+      <Header />
+      <main class="main">
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -28,14 +30,21 @@ $bg-sport: url("/public/img/screen-background/bg-sport.jpg");
 $bg-stage: url("/public/img/screen-background/bg-stage.jpg");
 $bg-opera: url("/public/img/screen-background/theater.png");
 
+.wrapperApp {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  margin-top: 71px;
+  flex: 1;
+  overflow-y: auto;
+}
+
 .bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 
   &_default {
     background-image: $bg-default;

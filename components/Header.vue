@@ -1,7 +1,7 @@
 <template>
   <header class="header">
-    <div class="content headerContent">
-      <div class="overlayBlur">
+    <div class="content">
+      <div class="overlayBlur _headerContent">
         <img
           class="logo"
           src="../public/img/logo/logo-mobile.svg"
@@ -16,19 +16,24 @@
 
 <script setup></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .header {
-  width: 100%;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
 }
 
-.headerContent {
-  padding: 15px 12px 15px;
+._headerContent {
+  border-radius: 0;
 }
 
 .logo {
   padding: 10px 0;
   display: block;
+  margin: auto;
 }
 </style>
