@@ -11,10 +11,11 @@
           <div class="overlayBlur">
             <div class="descEvent">
               <img
-                src="/public/img/cover-cites/lenkom.jpg"
+                :src="event.image"
                 width="100"
                 height="100"
-                alt=""
+                :alt="event.name"
+                class="venue"
               />
               <p class="eventDay">{{ formatDate(event.day) }}</p>
             </div>

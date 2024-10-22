@@ -10,7 +10,7 @@
             width="24"
             alt=" вернуться на главный экран"
           />
-          <span class="navbar__link-title">домой</span>
+          <span class="navbar__link-title">Домой</span>
         </NuxtLink>
       </li>
       <li class="navbarItem">
@@ -22,7 +22,7 @@
             width="24"
             alt="Календарь для выбора нужной даты"
           />
-          <span class="navbar__link-title">календарь</span>
+          <span class="navbar__link-title">Календарь</span>
         </NuxtLink>
       </li>
       <li class="navbarItem">
@@ -34,7 +34,7 @@
             width="24"
             alt="Календарь для выбора нужной даты"
           />
-          <span class="navbar__link-title">календарь</span>
+          <span class="navbar__link-title">Календарь</span>
         </NuxtLink>
       </li>
       <li class="navbarItem">
@@ -46,7 +46,7 @@
             width="24"
             alt="Позвонить"
           />
-          <span class="navbar__link-title">позвонить</span>
+          <span class="navbar__link-title">Позвонить</span>
         </NuxtLink>
       </li>
     </ul>
@@ -73,7 +73,9 @@
 }
 
 .navbarItemLink {
-  font-size: 12px;
+  font-family: "Prata";
+  @include font(0.8rem, 19px, 500);
+  letter-spacing: 0.03rem;
   display: flex;
   flex-direction: column;
   align-items: center;
