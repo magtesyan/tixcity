@@ -73,5 +73,7 @@ const categoryTitle =
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+
+  box-shadow: 7px 15px 10px -5px black;
 }
 </style>
