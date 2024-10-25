@@ -10,8 +10,18 @@ export default defineNuxtConfig({
       },
     },
   },
+  googleFonts: {
+    fontsDir: "assets/fonts",
+    families: {
+      "Roboto Condensed": [300, 400, 500, 600, 700],
+    },
+    display: "swap",
+  },
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "nuxt-swiper"],
+  modules: ["@nuxt/eslint", "nuxt-swiper", "@nuxtjs/google-fonts"],
+  swiper: {
+    styleLang: "scss",
+  },
   eslint: {
     // config: {
     //   stylistic: true,

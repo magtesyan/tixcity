@@ -1,0 +1,29 @@
+{
+  "slides": [
+    {
+      "name": "slide-1",
+      "image": "img/cover-cites/vachtangova.jpg",
+      "title": "слайд-1"
+    },
+    {
+      "name": "slide-2",
+      "image": "img/cover-cites/ermolova.jpg",
+      "title": "слайд-2"
+    },
+    {
+      "name": "slide-3",
+      "image": "img/cover-cites/lenkom.jpg",
+      "title": "слайд-3"
+    },
+    {
+      "name": "slide-4",
+      "image": "img/cover-cites/mhat-chehova.jpg",
+      "title": "слайд-4"
+    },
+    {
+      "name": "slide-5",
+      "image": "img/cover-cites/vachtangova.jpg",
+      "title": "слайд-5"
+    }
+  ]
+}

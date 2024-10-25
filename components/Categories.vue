@@ -47,7 +47,7 @@ const categories = categoriesData.categories;
 }
 
 .categoriesLinkTitle {
-  font-family: "Prata";
+  font-family: "Roboto";
   @include font(1rem, 19px, 500);
   letter-spacing: 0.03rem;
   display: block;

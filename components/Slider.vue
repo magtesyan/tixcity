@@ -2,64 +2,76 @@
   <section class="slider">
     <h2 class="visualyHidden">Слайдер</h2>
     <div class="content">
-      <ul class="sliderList list">
-        <li class="sliderItem">
-          <img
-            class="sliderItemImg"
-            src="/public/img/cover-cites/lenkom.jpg"
-            width="272"
-            height="216"
-            alt=""
-          />
-        </li>
-        <li class="sliderItem">
-          <img
-            class="sliderItemImg"
-            src="/public/img/cover-cites/lenkom.jpg"
-            width="272"
-            height="216"
-            alt=""
-          />
-        </li>
-        <li class="sliderItem">
-          <img
-            class="sliderItemImg"
-            src="/public/img/cover-cites/lenkom.jpg"
-            width="272"
-            height="216"
-            alt=""
-          />
-        </li>
-      </ul>
+      <Swiper
+        :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperEffectCoverflow]"
+        :slidesPerView="1.5"
+        :loop="true"
+        :grab-cursor="true"
+        effect="coverflow"
+        :centeredSlides="true"
+        :coverflowEffect="{
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        }"
+        :autoplay="{
+          delay: 5000,
+          disableOnInteraction: true,
+        }"
+        :creative-effect="{
+          prev: {
+            shadow: false,
+            translate: ['-20%', 0, -1],
+          },
+          next: {
+            translate: ['100%', 0, 0],
+          },
+        }"
+        class="sliderSwiper"
+      >
+        <SwiperSlide
+          v-for="slide in slides"
+          :key="slide.name"
+          class="swiperSlide"
+          :style="{ backgroundImage: `url(${slide.image})` }"
+        >
+          {{ slide.title }}
+        </SwiperSlide>
+      </Swiper>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+import slidesData from "../assets/data/slides.json";
+
+const slides = slidesData.slides;
+</script>
 
 <style lang="scss">
-.slider {
-  position: relative;
-  overflow-x: hidden;
+.sliderSwiper {
   width: 100%;
-  padding: 0;
+  height: 220px;
 }
-.sliderList {
-  padding: 0;
+
+.swiperSlide {
+  width: 90%;
+  height: 100%;
   display: flex;
-  width: 1000px;
-  position: relative;
-  left: -210px;
-  gap: 15px;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.sliderItem {
-  width: 250px;
+.swiper-slide-active {
+  transform: scale(1);
 }
 
-.sliderItemImg {
-  width: 100%;
-  min-height: 200px;
-  height: auto;
+.swiper-slide-next,
+.swiper-slide-prev {
+  transform: scale(0.7);
 }
 </style>

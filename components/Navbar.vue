@@ -73,8 +73,8 @@
 }
 
 .navbarItemLink {
-  font-family: "Prata";
-  @include font(0.8rem, 19px, 500);
+  font-family: "Roboto";
+  @include font(0.8rem, 19px, 300);
   letter-spacing: 0.03rem;
   display: flex;
   flex-direction: column;
