@@ -36,7 +36,7 @@ $bg-opera: url("/public/img/screen-background/theater.png");
   height: 100vh;
 }
 .main {
-  margin-top: 71px;
+  margin-top: 63px;
   margin-bottom: 58px;
   flex: 1;
   overflow-y: auto;

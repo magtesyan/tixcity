@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint"],
+  modules: ["@nuxt/eslint", "nuxt-swiper"],
   eslint: {
     // config: {
     //   stylistic: true,
