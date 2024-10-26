@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="content">
-      <div class="overlayBlur _headerContent">
+      <div class="overlayBlur headerContent">
         <NuxtLink to="/">
           <img
             class="logo"
@@ -22,12 +22,13 @@
 .header {
   top: 0;
   position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  width: 100%;
+  box-shadow:
+    0px 10px 15px 0px #1d1d1d,
+    0px 3px 7px 0px #161616;
 }
 
-._headerContent {
+.headerContent {
   border-radius: 0;
 }
 

@@ -73,18 +73,18 @@
 }
 
 .navbarItemLink {
-  font-family: "Roboto";
-  @include font(0.8rem, 19px, 300);
+  @include font(0.8rem, 19px, 300, "Roboto");
   letter-spacing: 0.03rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: $primaryColor;
-  padding: 5px 0;
+  padding: 7px 0;
 }
 
 .navbarLinkIcon {
-  margin-bottom: 5px;
+  width: 26px;
+  height: 26px;
 }
 </style>

@@ -37,7 +37,7 @@
           class="swiperSlide"
           :style="{ backgroundImage: `url(${slide.image})` }"
         >
-          {{ slide.title }}
+          <h2 class="slideTitle title">{{ slide.title }}</h2>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -51,16 +51,29 @@ const slides = slidesData.slides;
 </script>
 
 <style lang="scss">
+.slider {
+  padding: 20px 0 0;
+  min-height: 230px;
+}
 .sliderSwiper {
   width: 100%;
-  height: 220px;
+  height: 230px;
+}
+
+.slideTitle {
+  font-family: "Roboto";
+  @include font(22px, 28px, 600);
+  color: $primaryColor;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .swiperSlide {
-  width: 90%;
+  width: 92%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,6 +85,6 @@ const slides = slidesData.slides;
 
 .swiper-slide-next,
 .swiper-slide-prev {
-  transform: scale(0.7);
+  transform: scale(0.6);
 }
 </style>

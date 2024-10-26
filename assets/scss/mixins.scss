@@ -1,7 +1,8 @@
-@mixin font($fs: 16px, $lh: 19.5px, $fw: 500) {
+@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: "Playfair") {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;
+  font-family: $ff;
 }
 
 @mixin vp-768 {
