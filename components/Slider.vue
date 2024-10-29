@@ -4,12 +4,12 @@
     <div class="content">
       <Swiper
         :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperEffectCoverflow]"
-        :slidesPerView="1.5"
+        :slides-per-view="1.5"
         :loop="true"
         :grab-cursor="true"
         effect="coverflow"
-        :centeredSlides="true"
-        :coverflowEffect="{
+        :centered-slides="true"
+        :coverflow-effect="{
           rotate: 0,
           stretch: 0,
           depth: 200,

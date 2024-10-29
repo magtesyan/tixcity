@@ -10,7 +10,7 @@
             width="24"
             alt=" вернуться на главный экран"
           />
-          <span class="navbar__link-title">Домой</span>
+          <span class="navbarLinkTitle">Домой</span>
         </NuxtLink>
       </li>
       <li class="navbarItem">
@@ -22,7 +22,7 @@
             width="24"
             alt="Календарь для выбора нужной даты"
           />
-          <span class="navbar__link-title">Календарь</span>
+          <span class="navbarLinkTitle">Календарь</span>
         </NuxtLink>
       </li>
       <li class="navbarItem">
@@ -34,7 +34,7 @@
             width="24"
             alt="Календарь для выбора нужной даты"
           />
-          <span class="navbar__link-title">Календарь</span>
+          <span class="navbarLinkTitle">Календарь</span>
         </NuxtLink>
       </li>
       <li class="navbarItem">
@@ -46,7 +46,7 @@
             width="24"
             alt="Позвонить"
           />
-          <span class="navbar__link-title">Позвонить</span>
+          <span class="navbarLinkTitle">Позвонить</span>
         </NuxtLink>
       </li>
     </ul>
