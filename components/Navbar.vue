@@ -73,7 +73,7 @@
 }
 
 .navbarItemLink {
-  @include font(0.8rem, 19px, 300, "Roboto");
+  @include font(12px, 16px, 300, "Roboto");
   letter-spacing: 0.03rem;
   display: flex;
   flex-direction: column;

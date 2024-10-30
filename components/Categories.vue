@@ -49,7 +49,7 @@ const categories = categoriesData.categories;
 }
 
 .categoriesLinkTitle {
-  @include font(0.9em, 19px, 300, "Roboto");
+  @include font(14px, 16px, 300, "Roboto");
   letter-spacing: 0.03rem;
   display: block;
   padding: 10px 0;

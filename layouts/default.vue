@@ -1,12 +1,10 @@
 <template>
-  <div :class="backgroundClass">
-    <div class="wrapperApp">
-      <Header />
-      <main class="main">
-        <slot />
-      </main>
-      <Footer />
-    </div>
+  <div class="wrapperApp" :class="backgroundClass">
+    <Header />
+    <main class="main">
+      <slot />
+    </main>
+    <Footer />
   </div>
 </template>
 
