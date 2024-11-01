@@ -1,0 +1,18 @@
+@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: "Playfair") {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  font-family: $ff;
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

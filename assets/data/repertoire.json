@@ -1,16 +1,19 @@
 {
   "lenkom": [
     {
+      "image": "../img/venues/lenkom/gamlet.jpg",
       "title": "Доходное место",
       "date": "2023-11-01",
       "eventPath": "Доходное место"
     },
     {
+      "image": "../img/venues/lenkom/dohod-mesto.webp",
       "title": "Юнона и Авось",
       "date": "2023-11-02",
       "eventPath": "show-56"
     },
     {
+      "image": "../img/venues/lenkom/dohod-mesto.webp",
       "title": "Королевские игры",
       "date": "2023-11-03",
       "eventPath": "show-3"

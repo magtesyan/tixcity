@@ -1,20 +1,18 @@
 <template>
-  <section class="section">
+  <section class="sectionNavCategories">
     <h2 class="visualyHidden">Категории</h2>
-    <div class="content">
-      <div class="overlayBlur">
-        <ul class="categoriesList list">
-          <li
-            v-for="category in categories"
-            :key="category.path"
-            class="categoriesItem"
-          >
-            <NuxtLink class="categoriesLink link" :to="category.path">
-              <span class="categoriesLinkTitle">{{ category.name }}</span>
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
+    <div class="overlayBlur">
+      <ul class="categoriesList list">
+        <li
+          v-for="category in categories"
+          :key="category.path"
+          class="categoriesItem"
+        >
+          <NuxtLink class="categoriesLink link" :to="category.path">
+            <span class="categoriesLinkTitle">{{ category.name }}</span>
+          </NuxtLink>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -25,13 +23,17 @@ const categories = categoriesData.categories;
 </script>
 
 <style lang="scss">
+.sectionNavCategories {
+  padding: 17px 12px 17px;
+}
+
 .categoriesList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .categoriesItem:first-child,
@@ -47,8 +49,10 @@ const categories = categoriesData.categories;
 }
 
 .categoriesLinkTitle {
+  @include font(14px, 16px, 300, "Roboto");
+  letter-spacing: 0.03%;
   display: block;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .categoriesLink {

@@ -1,10 +1,10 @@
 <template>
-  <div class="wrapper">
-    <div :class="backgroundClass">
-      <Header />
+  <div class="wrapperApp" :class="backgroundClass">
+    <Header />
+    <main class="main">
       <slot />
-      <Footer />
-    </div>
+    </main>
+    <Footer />
   </div>
 </template>
 
@@ -20,24 +20,30 @@ const backgroundClass = computed(() => {
 </script>
 
 <style lang="scss">
-.wrapper {
-  height: 100vh;
-  width: 100%;
-}
-
 $bg: no-repeat, center, cover;
 $bg-default: url("/public/img/screen-background/default.png");
-$bg-theaters: url("/public/img/screen-background/theater.png");
+$bg-theaters: url("/public/img/venues/lenkom/king-play.webp");
 $bg-kids: url("/public/img/screen-background/bg-cirqe.jpg");
 $bg-sport: url("/public/img/screen-background/bg-sport.jpg");
 $bg-stage: url("/public/img/screen-background/bg-stage.jpg");
 $bg-opera: url("/public/img/screen-background/theater.png");
 
+.wrapperApp {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  margin-top: 63px;
+  margin-bottom: 58px;
+  flex: 1;
+  overflow-y: auto;
+}
+
 .bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
 
   &_default {
     background-image: $bg-default;

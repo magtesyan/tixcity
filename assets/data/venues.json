@@ -1,24 +1,34 @@
 {
   "theaters": [
     {
+      "image": "img/cover-cites/lenkom.jpg",
       "name": "Ленком",
-      "description": "Это краткое описание театра ленком",
+      "description": "Это краткое описание театра ленком? loremaslj ljaf qsqsrjh bqer qerhb qerjhbqeorjh nqeorjhvbqerovbboajsdjdbvqiwerjvhbviq ie r hberi gb weru",
       "path": "lenkom"
     },
     {
+      "image": "img/cover-cites/mhat-chehova.jpg",
       "name": "МХАТ Чехова",
       "description": "Это краткое описание театра ленком",
       "path": "mhatChehova"
     },
     {
+      "image": "img/cover-cites/vachtangova.jpg",
       "name": "Вахтангова",
       "description": "Это краткое описание театра ленком",
       "path": "vathtangova"
     },
     {
+      "image": "img/cover-cites/ermolova.jpg",
       "name": "театр Наций",
       "description": "Это краткое описание театра ленком",
       "path": "naciy"
+    },
+    {
+      "image": "img/cover-cites/ermolova.jpg",
+      "name": "театр Ермоловой",
+      "description": "Это краткое описание театра ленком",
+      "path": "ermolova"
     }
   ],
 
