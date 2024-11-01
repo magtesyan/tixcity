@@ -5,14 +5,14 @@
   font-family: $ff;
 }
 
-@mixin vp-768 {
-  @media (min-width: $tablet-768) {
+@mixin tablet {
+  @media (min-width: $tablet) {
     @content;
   }
 }
 
-@mixin vp-1024 {
-  @media (min-width: $desctop-1024) {
+@mixin desktop {
+  @media (min-width: $desktop) {
     @content;
   }
 }

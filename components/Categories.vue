@@ -50,7 +50,7 @@ const categories = categoriesData.categories;
 
 .categoriesLinkTitle {
   @include font(14px, 16px, 300, "Roboto");
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03%;
   display: block;
   padding: 10px 0;
 }
