@@ -52,12 +52,13 @@ const slides = slidesData.slides;
 
 <style lang="scss">
 .slider {
-  padding: 20px 0 0;
-  min-height: 230px;
+  padding: 0;
+  height: 100%;
 }
 .sliderSwiper {
   width: 100%;
-  height: 230px;
+  height: 100vh;
+  z-index: 0;
 }
 
 .slideTitle {
