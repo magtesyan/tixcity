@@ -11,10 +11,13 @@ export default defineNuxtConfig({
     },
   },
   googleFonts: {
+    download: false,
+
     fontsDir: "assets/fonts",
+    base64: true,
     families: {
-      "Roboto Condensed": [300, 400, 500, 600, 700],
-      "Playfair Display": [400, 500, 600, 700, 800],
+      "Old Standart TT": [400, 500, 600, 700, 800],
+      Oswald: [400, 500, 600, 700],
     },
     display: "swap",
   },

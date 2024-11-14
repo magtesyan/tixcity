@@ -4,30 +4,13 @@
     <div class="content">
       <Swiper
         :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperEffectCoverflow]"
-        :slides-per-view="1.5"
-        :loop="true"
+        :slides-per-view="1"
         :grab-cursor="true"
         effect="coverflow"
-        :centered-slides="true"
-        :coverflow-effect="{
-          rotate: 0,
-          stretch: 0,
-          depth: 200,
-          modifier: 1,
-          slideShadows: true,
-        }"
+        :pagination="true"
         :autoplay="{
           delay: 5000,
           disableOnInteraction: true,
-        }"
-        :creative-effect="{
-          prev: {
-            shadow: false,
-            translate: ['-20%', 0, -1],
-          },
-          next: {
-            translate: ['100%', 0, 0],
-          },
         }"
         class="sliderSwiper"
       >
@@ -37,7 +20,20 @@
           class="swiperSlide"
           :style="{ backgroundImage: `url(${slide.image})` }"
         >
-          <h2 class="slideTitle title">{{ slide.title }}</h2>
+          <div class="contentSlideWrapper">
+            <div class="contentSlide">
+              <div class="breadcramc">1/2/3</div>
+              <h3 class="slideTitle title">{{ slide.title }}</h3>
+              <div class="dateInfo">
+                <p class="slideEventYear">{{ slide.year }}</p>
+                <div class="day">
+                  <p class="slideEventDay">{{ slide.day }}</p>
+                  <p class="slideEventTime">{{ slide.time }}</p>
+                </div>
+              </div>
+              <NuxtLink class="buyTicketButton">купить билеты</NuxtLink>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -62,30 +58,67 @@ const slides = slidesData.slides;
 }
 
 .slideTitle {
-  font-family: "Roboto";
-  @include font(22px, 28px, 600);
+  @include font(22px, 28px, 700, "Old Standart TT");
   color: $primaryColor;
-  text-align: center;
+  margin-bottom: 20px;
+
   text-transform: uppercase;
 }
 
 .swiperSlide {
-  width: 92%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: block;
   background-position: center;
+
   background-repeat: no-repeat;
 }
 
-.swiper-slide-active {
-  transform: scale(1);
+.contentSlideWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(31, 31, 31, 1) 27%,
+    rgba(32, 31, 31, 0.594964035418855) 45%,
+    rgba(32, 31, 31, 0.7322189373796393) 73%
+  );
 }
 
-.swiper-slide-next,
-.swiper-slide-prev {
-  transform: scale(0.6);
+.contentSlide {
+  padding: 12px 16px;
+  margin-top: auto;
+  margin-bottom: 60px;
+}
+
+.buyTicketButton {
+  @include font(16px, 19px, 500, "Oswald");
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ff0000;
+}
+
+.dateInfo {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 117px;
+  margin-bottom: 20px;
+  padding: 7px 10px;
+  outline: 1px solid #ff0000;
+  gap: 14px;
+
+  .slideEventYear {
+    @include font(20px, 23px, 700, "Old Standart TT");
+  }
+
+  p {
+    display: block;
+    margin: 0;
+  }
 }
 </style>

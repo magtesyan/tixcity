@@ -2,9 +2,15 @@
   padding: 10px 12px 10px;
 }
 
+.button {
+  border: none;
+  padding: 0;
+  background-color: #ff0000;
+}
+
 .title {
   display: block;
-  text-align: center;
+  margin: 0;
 }
 
 .text {
@@ -21,14 +27,6 @@
   text-align: center;
   width: 150px;
   margin: auto;
-}
-
-.overlayBlur {
-  background: rgb(93, 93, 93, 30%);
-  backdrop-filter: blur(5px);
-
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 .list {

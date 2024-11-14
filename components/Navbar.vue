@@ -29,7 +29,7 @@
         <NuxtLink class="navbarItemLink link" to="/opera/opera">
           <img
             class="navbarLinkIcon"
-            src="/public/img/icons/сalendar.svg"
+            src="/public/img/icons/search.svg"
             height="24"
             width="24"
             alt="Календарь для выбора нужной даты"
@@ -73,13 +73,12 @@
 }
 
 .navbarItemLink {
-  @include font(12px, 16px, 300, "Roboto");
+  @include font(12px, 14px, 400, "Oswald");
   letter-spacing: 0.03rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: $primaryColor;
   padding: 7px 0;
 }
 
