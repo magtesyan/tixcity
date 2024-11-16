@@ -12,22 +12,22 @@
     <div v-if="isOpenMenu" class="mobileMenu">
       <ul class="list listLinksMenu">
         <li class="itemMobMenu">
-          <NuxtLink to="/" @click="closeMenu" class="itemLinkMenu"
+          <NuxtLink to="/" @click="closeMenu" class="link itemLinkMenu"
             >О нас</NuxtLink
           >
         </li>
         <li class="itemMobMenu">
-          <NuxtLink to="/" @click="closeMenu" class="itemLinkMenu"
+          <NuxtLink to="/" @click="closeMenu" class="link itemLinkMenu"
             >Карта</NuxtLink
           >
         </li>
         <li class="itemMobMenu">
-          <NuxtLink to="/" @click="closeMenu" class="itemLinkMenu"
+          <NuxtLink to="/" @click="closeMenu" class="link itemLinkMenu"
             >Идея</NuxtLink
           >
         </li>
       </ul>
-      <button @click="closeMenu" class="closeMenu">
+      <button @click="closeMenu" class="button closeMenu">
         <img
           src="../public/img/icons/menu.svg"
           width="24"
@@ -54,12 +54,18 @@ const toggleMenu = () => {
 <style lang="scss" scoped>
 .mobMenuButton,
 .closeMenu {
-  background: #ff0000;
+  background: $secondaryColor;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
+}
+
+.closeMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .gamburgerIcon {
@@ -73,15 +79,16 @@ const toggleMenu = () => {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+
   z-index: 20;
 }
 
 .listLinksMenu {
-  width: 92%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,6 +97,5 @@ const toggleMenu = () => {
 
 .itemMobMenu {
   padding: 15px 0;
-  border-bottom: 1px solid red;
 }
 </style>
