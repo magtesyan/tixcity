@@ -2,7 +2,7 @@
   "slides": [
     {
       "name": "slide-1",
-      "image": "img/cover-cites/vachtangova.jpg",
+      "image": "img/top-events/tout-paye.jpg",
       "title": "Все Оплачено",
       "year": "12/13",
       "day": "Среда",
@@ -10,7 +10,7 @@
     },
     {
       "name": "slide-2",
-      "image": "img/cover-cites/ermolova.jpg",
+      "image": "img/top-events/cirk.jpg",
       "title": "Россия - Швеция",
       "year": "12/13",
       "day": "Среда",
@@ -18,7 +18,7 @@
     },
     {
       "name": "slide-3",
-      "image": "img/cover-cites/lenkom.jpg",
+      "image": "img/top-events/oncert.jpg",
       "title": "Россия - Швеция",
       "year": "12/13",
       "day": "Среда",
@@ -26,7 +26,7 @@
     },
     {
       "name": "slide-4",
-      "image": "img/cover-cites/mhat-chehova.jpg",
+      "image": "img/top-events/russia_099.jpg",
       "title": "Россия - Швеция",
       "year": "12/13",
       "day": "Среда",
@@ -34,7 +34,7 @@
     },
     {
       "name": "slide-5",
-      "image": "img/cover-cites/vachtangova.jpg",
+      "image": "img/top-events/gizel.jpg",
       "title": "Россия - Швеция",
       "year": "12/13",
       "day": "Среда",

@@ -8,12 +8,15 @@
 
 <style lang="scss">
 .footer {
+  display: flex;
+  z-index: 10;
   position: fixed;
   width: 100%;
   bottom: 0;
+  min-height: 60px;
   background: $background-primary;
-  box-shadow:
-    0px 10px 15px 0px #1d1d1d,
-    0px 3px 7px 0px #161616;
+
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
 }
 </style>

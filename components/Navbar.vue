@@ -50,6 +50,15 @@
         </NuxtLink>
       </li>
     </ul>
+    <button type="button" class="button buttonCategory">
+      <img
+        class="navbarLinkIcon"
+        src="/public/img/icons/phone.svg"
+        height="24"
+        width="24"
+        alt="Позвонить"
+      />
+    </button>
   </nav>
 </template>
 
@@ -57,8 +66,14 @@
 
 <style lang="scss">
 .navbar {
+  position: relative;
   width: 100%;
+  // background-image: url("../public/img/Subtract.svg");
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
+
 .navbarList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -85,5 +100,12 @@
 .navbarLinkIcon {
   width: 26px;
   height: 26px;
+}
+
+.buttonCategory {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background: red;
 }
 </style>

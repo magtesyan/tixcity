@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     fontsDir: "assets/fonts",
     base64: true,
     families: {
-      "Old Standart TT": [400, 500, 600, 700, 800],
+      Playfair: [400, 500, 600, 700, 800],
       Oswald: [400, 500, 600, 700],
     },
     display: "swap",

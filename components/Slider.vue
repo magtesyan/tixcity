@@ -6,7 +6,6 @@
         :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperEffectCoverflow]"
         :slides-per-view="1"
         :grab-cursor="true"
-        effect="coverflow"
         :pagination="true"
         :autoplay="{
           delay: 5000,
@@ -46,21 +45,21 @@ import slidesData from "../assets/data/slides.json";
 const slides = slidesData.slides;
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .slider {
   padding: 0;
   height: 100%;
 }
 .sliderSwiper {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 0;
 }
 
 .slideTitle {
+  margin-bottom: 20px;
   @include font(22px, 28px, 700, "Old Standart TT");
   color: $primaryColor;
-  margin-bottom: 20px;
 
   text-transform: uppercase;
 }
@@ -69,6 +68,7 @@ const slides = slidesData.slides;
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
   background-position: center;
 
   background-repeat: no-repeat;
@@ -90,6 +90,10 @@ const slides = slidesData.slides;
   padding: 12px 16px;
   margin-top: auto;
   margin-bottom: 60px;
+
+  @include tablet {
+    padding: 16px 39px;
+  }
 }
 
 .buyTicketButton {
@@ -112,13 +116,27 @@ const slides = slidesData.slides;
   outline: 1px solid #ff0000;
   gap: 14px;
 
-  .slideEventYear {
-    @include font(20px, 23px, 700, "Old Standart TT");
-  }
-
   p {
     display: block;
     margin: 0;
+  }
+}
+
+.slideEventYear {
+  @include font(20px, 23px, 700, "Old Standart TT");
+}
+
+.slideEventDay {
+  @include font(14px, 16px, 400, "Oswald");
+}
+
+.slideEventTime {
+  @include font(12px, 14px, 500, "Oswald");
+}
+
+@include tablet {
+  .slideEventYear {
+    @include font(22px, 26px, 700, "Old Standart TT");
   }
 }
 </style>

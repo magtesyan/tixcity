@@ -32,7 +32,9 @@ $bg-opera: url("/public/img/screen-background/theater.png");
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .main {
   flex: 1;

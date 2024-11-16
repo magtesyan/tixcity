@@ -1,11 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
 .section {
   padding: 10px 12px 10px;
 }
 
 .button {
   border: none;
-  padding: 0;
-  background-color: #ff0000;
+
+  cursor: pointer;
 }
 
 .title {
