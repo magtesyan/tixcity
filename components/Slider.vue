@@ -59,7 +59,7 @@ const slides = slidesData.slides;
 
 .slideTitle {
   margin-bottom: 20px;
-  @include font(26px, 30px, 700, $titleText);
+  @include font(26px, 80%, 700, $titleText);
   color: $primaryColor;
 
   text-transform: uppercase;
@@ -86,26 +86,25 @@ const slides = slidesData.slides;
   );
 
   @include tablet {
-    align-content: flex-start;
+    align-content: center;
   }
 }
 
 .contentSlideContainer {
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 5% 3%;
   margin-top: auto;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
 
-  @include responsivePadding(padding-left);
-  @include responsivePadding(padding-right);
-
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 300px;
+    padding: 3% 5%;
+  }
+
+  @include desktop {
+    padding: 3% 15%;
   }
 }
 
