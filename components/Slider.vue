@@ -3,14 +3,10 @@
     <h2 class="visualyHidden">Слайдер</h2>
     <div class="content">
       <Swiper
-        :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperEffectCoverflow]"
+        :modules="[SwiperEffectCreative, SwiperEffectCoverflow]"
         :slides-per-view="1"
         :grab-cursor="true"
         :pagination="true"
-        :autoplay="{
-          delay: 5000,
-          disableOnInteraction: true,
-        }"
         class="sliderSwiper"
       >
         <SwiperSlide
@@ -20,17 +16,21 @@
           :style="{ backgroundImage: `url(${slide.image})` }"
         >
           <div class="contentSlideWrapper">
-            <div class="contentSlide">
-              <div class="breadcramc">1/2/3</div>
-              <h3 class="slideTitle title">{{ slide.title }}</h3>
-              <div class="dateInfo">
-                <p class="slideEventYear">{{ slide.year }}</p>
-                <div class="day">
-                  <p class="slideEventDay">{{ slide.day }}</p>
-                  <p class="slideEventTime">{{ slide.time }}</p>
+            <div class="contentSlideContainer">
+              <div class="contentSlideInfo">
+                <div class="breadcramc">1/2/3</div>
+                <h3 class="slideTitle title">{{ slide.title }}</h3>
+                <div class="dateInfo">
+                  <p class="slideEventYear">{{ slide.year }}</p>
+                  <div class="day">
+                    <p class="slideEventDay">{{ slide.day }}</p>
+                    <p class="slideEventTime">{{ slide.time }}</p>
+                  </div>
                 </div>
               </div>
-              <NuxtLink class="buyTicketButton">купить билеты</NuxtLink>
+              <div class="controlSlideInfo">
+                <NuxtLink class="buyTicketButton">подробнее</NuxtLink>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -50,6 +50,7 @@ const slides = slidesData.slides;
   padding: 0;
   height: 100%;
 }
+
 .sliderSwiper {
   width: 100vw;
   height: 100vh;
@@ -58,7 +59,7 @@ const slides = slidesData.slides;
 
 .slideTitle {
   margin-bottom: 20px;
-  @include font(22px, 28px, 700, "Old Standart TT");
+  @include font(26px, 30px, 700, $titleText);
   color: $primaryColor;
 
   text-transform: uppercase;
@@ -75,8 +76,7 @@ const slides = slidesData.slides;
 }
 
 .contentSlideWrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   height: 100%;
   background: linear-gradient(
     0deg,
@@ -84,26 +84,39 @@ const slides = slidesData.slides;
     rgba(32, 31, 31, 0.594964035418855) 45%,
     rgba(32, 31, 31, 0.7322189373796393) 73%
   );
-}
-
-.contentSlide {
-  padding: 12px 16px;
-  margin-top: auto;
-  margin-bottom: 60px;
 
   @include tablet {
-    padding: 16px 39px;
+    align-content: flex-start;
+  }
+}
+
+.contentSlideContainer {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+
+  @include responsivePadding(padding-left);
+  @include responsivePadding(padding-right);
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 300px;
   }
 }
 
 .buyTicketButton {
-  @include font(16px, 19px, 500, "Oswald");
+  @include font(14px, 18px, 600, "Oswald");
   display: block;
   width: 100%;
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
-  background: #ff0000;
+  background: $secondaryColor;
 }
 
 .dateInfo {
@@ -113,7 +126,7 @@ const slides = slidesData.slides;
   width: 117px;
   margin-bottom: 20px;
   padding: 7px 10px;
-  outline: 1px solid #ff0000;
+  outline: 1px solid $secondaryColor;
   gap: 14px;
 
   p {
@@ -123,7 +136,7 @@ const slides = slidesData.slides;
 }
 
 .slideEventYear {
-  @include font(20px, 23px, 700, "Old Standart TT");
+  @include font(24px, 30px, 700, $titleText);
 }
 
 .slideEventDay {
@@ -136,7 +149,7 @@ const slides = slidesData.slides;
 
 @include tablet {
   .slideEventYear {
-    @include font(22px, 26px, 700, "Old Standart TT");
+    @include font(22px, 26px, 700, $titleText);
   }
 }
 </style>

@@ -16,3 +16,19 @@
     @content;
   }
 }
+
+@mixin responsivePadding($prop) {
+  #{$prop}: clamp($minPaddingMob, 3vw, $maxPadding);
+
+  & {
+    @media (min-width: $tablet) {
+      #{$prop}: clamp($minPaddingTablet, 7vw, $maxPadding);
+    }
+  }
+
+  & {
+    @media (min-width: $desktop) {
+      #{$prop}: clamp($minPaddingDesctop, 10vw, $maxPadding);
+    }
+  }
+}

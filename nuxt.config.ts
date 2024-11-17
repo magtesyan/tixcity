@@ -9,6 +9,15 @@ export default defineNuxtConfig({
         },
       },
     },
+    build: {
+      target: "esnext",
+      minify: false,
+    },
+    server: {
+      hmr: {
+        overlay: false,
+      },
+    },
   },
   googleFonts: {
     download: false,

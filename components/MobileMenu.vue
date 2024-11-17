@@ -78,8 +78,10 @@ const toggleMenu = () => {
   right: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  backdrop-filter: 2px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(13, 16, 24, 0.75);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,11 +90,16 @@ const toggleMenu = () => {
 }
 
 .listLinksMenu {
+  background-color: rgba(12, 12, 12, 0.54);
+  padding: 50px 20px;
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid rgb(0 0 0 / 13%);
+  box-shadow: -5px -3px 17px 0 rgb(47, 47, 47, 0.4);
 }
 
 .itemMobMenu {
