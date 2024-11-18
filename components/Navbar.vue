@@ -50,19 +50,17 @@
         </NuxtLink>
       </li>
     </ul>
-    <button type="button" class="button buttonCategory">
-      <img
-        class="navbarLinkIcon"
-        src="/public/img/icons/phone.svg"
-        height="24"
-        width="24"
-        alt="Позвонить"
-      />
+    <button @click="goToCategories" type="button" class="button buttonCategory">
+      перейти
     </button>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+const goToCategories = () => {
+  navigateTo("/categories");
+};
+</script>
 
 <style lang="scss">
 .navbar {
@@ -104,8 +102,8 @@
 
 .buttonCategory {
   position: absolute;
-  top: -50%;
-  left: -50%;
+  top: 0%;
+  left: 60px;
   background: red;
 }
 </style>

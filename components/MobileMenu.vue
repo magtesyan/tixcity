@@ -9,6 +9,7 @@
         class="gamburgerIcon"
       />
     </button>
+
     <div v-if="isOpenMenu" class="mobileMenu">
       <ul class="list listLinksMenu">
         <li class="itemMobMenu">
