@@ -8,3 +8,15 @@ body {
   height: 100vh;
   color: $primaryColor;
 }
+
+.container {
+  padding: 5% 3%;
+
+  @include tablet {
+    padding: 3% 4%;
+  }
+
+  @include desktop {
+    padding: 5% 15%;
+  }
+}

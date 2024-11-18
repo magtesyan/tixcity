@@ -61,6 +61,11 @@ const toggleMenu = () => {
   justify-content: center;
   width: 60px;
   height: 60px;
+
+  @include tablet {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .closeMenu {

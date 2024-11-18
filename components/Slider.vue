@@ -16,15 +16,17 @@
           :style="{ backgroundImage: `url(${slide.image})` }"
         >
           <div class="contentSlideWrapper">
-            <div class="contentSlideContainer">
+            <div class="container contentSlideContainer">
               <div class="contentSlideInfo">
                 <div class="breadcramc">1/2/3</div>
                 <h3 class="slideTitle title">{{ slide.title }}</h3>
                 <div class="dateInfo">
-                  <p class="slideEventYear">{{ slide.year }}</p>
-                  <div class="day">
-                    <p class="slideEventDay">{{ slide.day }}</p>
-                    <p class="slideEventTime">{{ slide.time }}</p>
+                  <div class="containerDateInfo">
+                    <p class="slideEventYear">{{ slide.year }}</p>
+                    <div class="day">
+                      <p class="slideEventDay">{{ slide.day }}</p>
+                      <p class="slideEventTime">{{ slide.time }}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -57,14 +59,6 @@ const slides = slidesData.slides;
   z-index: 0;
 }
 
-.slideTitle {
-  margin-bottom: 20px;
-  @include font(26px, 80%, 700, $titleText);
-  color: $primaryColor;
-
-  text-transform: uppercase;
-}
-
 .swiperSlide {
   width: 100%;
   height: auto;
@@ -91,51 +85,68 @@ const slides = slidesData.slides;
 }
 
 .contentSlideContainer {
-  padding: 5% 3%;
   margin-top: auto;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
 
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    padding: 3% 5%;
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
+
+.breadcramc {
+  @include font(12px, 18px, 400);
+  margin-bottom: 5px;
+
+  @include tablet {
+    margin-bottom: 10px;
   }
 
   @include desktop {
-    padding: 3% 15%;
+    margin-bottom: 15px;
   }
 }
 
-.buyTicketButton {
-  @include font(14px, 18px, 600, "Oswald");
-  display: block;
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
-  text-transform: uppercase;
-  background: $secondaryColor;
+.slideTitle {
+  margin-bottom: 15px;
+  @include font(37px, 80%, 700, $titleText);
+  color: $primaryColor;
+
+  @include tablet {
+    margin-bottom: 20px;
+    @include font(42px, 80%, 700, $titleText);
+  }
+
+  @include desktop {
+    margin-bottom: 25px;
+    @include font(48px, 80%, 700, $titleText);
+  }
 }
 
 .dateInfo {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  width: 117px;
+  min-width: 120px;
+  max-width: fit-content;
   margin-bottom: 20px;
-  padding: 7px 10px;
   outline: 1px solid $secondaryColor;
-  gap: 14px;
 
-  p {
-    display: block;
-    margin: 0;
+  @include tablet {
+    max-width: 150px;
   }
 }
 
+.containerDateInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
 .slideEventYear {
-  @include font(24px, 30px, 700, $titleText);
+  @include font(28px, 32px, 800, $titleText);
 }
 
 .slideEventDay {
@@ -148,7 +159,41 @@ const slides = slidesData.slides;
 
 @include tablet {
   .slideEventYear {
-    @include font(22px, 26px, 700, $titleText);
+    @include font(38px, 92%, 700, $titleText);
   }
+
+  .slideEventDay {
+    @include font(18px, 22px, 400, "Oswald");
+  }
+
+  .slideEventTime {
+    @include font(14px, 18px, 500, "Oswald");
+  }
+}
+
+.buyTicketButton {
+  @include font(14px, 18px, 600, "Oswald");
+  display: block;
+  width: 100%;
+  padding: 17px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: $secondaryColor;
+
+  @include tablet {
+    @include font(14px, 19px, 600);
+    margin-left: auto;
+    padding: 20px 0;
+    min-width: 100px;
+    max-width: 120px;
+  }
+
+  @include desktop {
+    padding: 25px 0;
+  }
+}
+
+.controlSlideInfo {
+  width: 100%;
 }
 </style>

@@ -22,9 +22,15 @@
 .containerHeader {
   display: flex;
   align-items: center;
+  width: 100%;
+  padding: 0 3%;
 
   @include tablet {
-    padding: 15px 39px;
+    padding: 1% 4%;
+  }
+
+  @include desktop {
+    padding: 1% 7%;
   }
 }
 </style>

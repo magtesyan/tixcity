@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/" class="logo">
+  <NuxtLink to="/" class="link logo">
     <img
       class="logoIcon"
       src="../public/img/logo/logo-mobile.png "
@@ -17,5 +17,12 @@
   display: flex;
   align-items: center;
   padding: 0 12px;
+}
+
+.logoIcon {
+  @include tablet {
+    width: 150px;
+    height: 45px;
+  }
 }
 </style>
