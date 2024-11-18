@@ -86,7 +86,6 @@ const goToCategories = () => {
 
   @include tablet {
     padding: 1% 4%;
-    grid-template-columns: 1fr 25% 1fr;
   }
 
   @include desktop {
@@ -103,10 +102,8 @@ const goToCategories = () => {
 
 .navbarItem {
   position: relative;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include centered;
 }
 
 .navbarItemLink {

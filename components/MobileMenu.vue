@@ -56,9 +56,7 @@ const toggleMenu = () => {
 .mobMenuButton,
 .closeMenu {
   background: $secondaryColor;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered;
   width: 60px;
   height: 60px;
 
@@ -99,10 +97,8 @@ const toggleMenu = () => {
   background-color: rgba(12, 12, 12, 0.54);
   padding: 50px 20px;
   width: 70%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include centered;
 
   border: 1px solid rgb(0 0 0 / 13%);
   box-shadow: -5px -3px 17px 0 rgb(47, 47, 47, 0.4);
