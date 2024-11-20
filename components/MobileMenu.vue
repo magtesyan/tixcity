@@ -1,110 +1,52 @@
 <template>
-  <div>
-    <button @click="toggleMenu" class="button mobMenuButton">
+  <div class="mobileMenuWrapper">
+    <MobileMenuListLinks />
+    <button @click="$emit('close')" class="button closeMenu">
       <img
-        src="../public/img/icons/menu.svg"
+        src="../public/img/icons/close.svg"
         width="24"
         height="24"
-        alt="Меню"
-        class="gamburgerIcon"
+        alt="Закрыть меню"
       />
     </button>
-
-    <div v-if="isOpenMenu" class="mobileMenu">
-      <ul class="list listLinksMenu">
-        <li class="itemMobMenu">
-          <NuxtLink to="/" @click="closeMenu" class="link itemLinkMenu"
-            >О нас</NuxtLink
-          >
-        </li>
-        <li class="itemMobMenu">
-          <NuxtLink to="/" @click="closeMenu" class="link itemLinkMenu"
-            >Карта</NuxtLink
-          >
-        </li>
-        <li class="itemMobMenu">
-          <NuxtLink to="/" @click="closeMenu" class="link itemLinkMenu"
-            >Идея</NuxtLink
-          >
-        </li>
-      </ul>
-      <button @click="closeMenu" class="button closeMenu">
-        <img
-          src="../public/img/icons/menu.svg"
-          width="24"
-          height="24"
-          alt="Закрыть меню"
-        />
-      </button>
-    </div>
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const isOpenMenu = ref(false);
-const closeMenu = () => {
-  isOpenMenu.value = false;
-};
-const toggleMenu = () => {
-  isOpenMenu.value = !isOpenMenu.value;
-};
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
-.mobMenuButton,
-.closeMenu {
-  background: $secondaryColor;
-  @include centered;
-  width: 60px;
-  height: 60px;
-
-  @include tablet {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-.closeMenu {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.gamburgerIcon {
-  display: block;
-}
-
-.mobileMenu {
-  position: absolute;
+.mobileMenuWrapper {
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(13, 16, 24, 0.75);
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
+  justify-content: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(13, 16, 24, 0.85);
   z-index: 20;
 }
 
-.listLinksMenu {
-  background-color: rgba(12, 12, 12, 0.54);
-  padding: 50px 20px;
-  width: 70%;
-  flex-direction: column;
-  @include centered;
+.closeMenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 
-  border: 1px solid rgb(0 0 0 / 13%);
-  box-shadow: -5px -3px 17px 0 rgb(47, 47, 47, 0.4);
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.itemMobMenu {
-  padding: 15px 0;
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 </style>

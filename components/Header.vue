@@ -2,12 +2,25 @@
   <header class="header">
     <div class="containerHeader">
       <Logo />
+      <MobileMenuButton @toggle="toggleMenu" />
     </div>
-    <MobileMenu />
+    <MobileMenu v-if="isOpenMenu" @close="closeMenu" />
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const isOpenMenu = ref(false);
+
+const toggleMenu = () => {
+  isOpenMenu.value = !isOpenMenu.value;
+};
+
+const closeMenu = () => {
+  isOpenMenu.value = false;
+};
+</script>
 
 <style lang="scss" scoped>
 .header {
@@ -17,11 +30,17 @@
   top: 0;
   position: fixed;
   width: 100%;
+  backdrop-filter: blur(10px);
+
+  @include tablet {
+    padding: 0 4%;
+  }
 }
 
 .containerHeader {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0 3%;
 
