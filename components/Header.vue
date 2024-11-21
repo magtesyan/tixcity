@@ -25,7 +25,6 @@ const closeMenu = () => {
 <style lang="scss" scoped>
 .header {
   display: flex;
-  justify-content: space-between;
   z-index: 10;
   top: 0;
   position: fixed;
@@ -39,11 +38,12 @@ const closeMenu = () => {
 }
 
 .containerHeader {
+  width: 100%;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 0 3%;
+  padding: 10px 3%;
 
   @include tablet {
     padding: 1% 4%;

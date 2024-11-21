@@ -14,21 +14,18 @@
 
 <style lang="scss" scoped>
 .mobMenuButton {
-  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  background: $secondaryColor;
   border: none;
   cursor: pointer;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered;
 
-  width: 40px;
-  height: 40px;
-
-  @include tablet {
-    width: 50px;
-    height: 50px;
-  }
+  width: 50px;
+  height: 50px;
 
   &:hover {
     opacity: 0.8;

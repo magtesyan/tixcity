@@ -31,10 +31,12 @@
 }
 
 .closeMenu {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
+  top: 0;
+  right: 0;
+  background: $secondaryColor;
   border: none;
   cursor: pointer;
 
