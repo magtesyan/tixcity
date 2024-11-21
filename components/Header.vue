@@ -31,6 +31,7 @@ const closeMenu = () => {
   position: fixed;
   width: 100%;
   backdrop-filter: blur(10px);
+  box-shadow: inset 0 -1px 10px -12px #ffffff;
 
   @include tablet {
     padding: 0 4%;

@@ -2,7 +2,7 @@
   <NuxtLink to="/" class="link logo">
     <img
       class="logoIcon"
-      src="../public/img/logo/logo-mobile.png "
+      src="../public/img/logo/logo-mobile.png"
       width="130"
       height="31"
       alt="Логотип сайта по продаже билетов"
