@@ -1,75 +1,19 @@
 <template>
   <nav class="navbar">
     <ul class="navbarList list">
-      <div class="navbarLeftItems">
-        <li class="navbarItem">
-          <NuxtLink class="navbarItemLink link" to="/">
-            <img
-              class="navbarLinkIcon"
-              src="/public/img/icons/house.svg"
-              height="24"
-              width="24"
-              alt=" вернуться на главный экран"
-            />
-            <span class="navbarLinkTitle">Домой</span>
-          </NuxtLink>
-        </li>
-        <li class="navbarItem">
-          <NuxtLink class="navbarItemLink link" to="/opera/opera">
-            <img
-              class="navbarLinkIcon"
-              src="/public/img/icons/сalendar.svg"
-              height="24"
-              width="24"
-              alt="Календарь для выбора нужной даты"
-            />
-            <span class="navbarLinkTitle">Календарь</span>
-          </NuxtLink>
-        </li>
-      </div>
-      <li class="navbarItem">
-        <button
-          @click="goToCategories"
-          type="button"
-          class="button buttonCategory"
-        >
-          перейти
-        </button>
-      </li>
-      <div class="navbarRightItems">
-        <li class="navbarItem">
-          <NuxtLink class="navbarItemLink link" to="/opera/opera">
-            <img
-              class="navbarLinkIcon"
-              src="/public/img/icons/search.svg"
-              height="24"
-              width="24"
-              alt="Календарь для выбора нужной даты"
-            />
-            <span class="navbarLinkTitle">Календарь</span>
-          </NuxtLink>
-        </li>
-        <li class="navbarItem">
-          <NuxtLink class="navbarItemLink link">
-            <img
-              class="navbarLinkIcon"
-              src="/public/img/icons/phone.svg"
-              height="24"
-              width="24"
-              alt="Позвонить"
-            />
-            <span class="navbarLinkTitle">Позвонить</span>
-          </NuxtLink>
-        </li>
-      </div>
+      <NavbarItem v-for="(link, index) in links" :key="index" :link="link" />
     </ul>
   </nav>
 </template>
 
 <script setup>
-const goToCategories = () => {
-  navigateTo("/categories");
-};
+const links = [
+  { label: "Домой", to: "/categories" },
+  { label: "Календарь", to: "/" },
+  { label: "Категории", to: "/categories" },
+  { label: "Поиск", to: "/" },
+  { label: "Кабинет", to: "/" },
+];
 </script>
 
 <style lang="scss">
@@ -82,7 +26,7 @@ const goToCategories = () => {
 .navbarList {
   padding: 0 2%;
   display: grid;
-  grid-template-columns: 1fr 25% 1fr;
+  grid-template-columns: 1fr 1fr 25% 1fr 1fr;
 
   @include tablet {
     padding: 1% 4%;

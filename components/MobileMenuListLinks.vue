@@ -26,7 +26,7 @@
 <script setup>
 const links = [
   { label: "О нас", to: "/" },
-  { label: "Карта", to: "/map" },
-  { label: "Идея", to: "/idea" },
+  { label: "Карта", to: "/" },
+  { label: "Идея", to: "/" },
 ];
 </script>
