@@ -1,5 +1,5 @@
 <template>
-  <div class="mobileMenuWrapper">
+  <div class="mobileMenuWrapper" @close="$emit('close')">
     <MobileMenuListLinks />
     <button @click="$emit('close')" class="button closeMenu">
       <img

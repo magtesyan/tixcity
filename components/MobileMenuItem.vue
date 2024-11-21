@@ -1,5 +1,5 @@
 <template>
-  <li :v-for="(item, index) in menuLinks" :key="index" class="itemMobMenu">
+  <li class="itemMobMenu">
     <NuxtLink :to="link.to" @click="$emit('close')" class="link itemLinkMenu">
       {{ link.label }}
     </NuxtLink>
@@ -7,11 +7,13 @@
 </template>
 
 <script setup>
-const menuLinks = [
-  { label: "О нас", to: "/" },
-  { label: "Карта", to: "/" },
-  { label: "Идея", to: "/" },
-];
+defineProps({
+  link: {
+    type: Object,
+    required: true,
+    validator: (value) => "to" in value && "label" in value,
+  },
+});
 </script>
 
 <style lang="scss" scoped>

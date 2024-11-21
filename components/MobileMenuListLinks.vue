@@ -1,18 +1,6 @@
 <template>
   <ul class="list listLinksMenu">
-    <li class="itemMobMenu">
-      <NuxtLink to="/" class="link itemLinkMenu">О нас</NuxtLink>
-    </li>
-    <li class="itemMobMenu">
-      <NuxtLink to="/" @click="$emit('close')" class="link itemLinkMenu"
-        >Карта</NuxtLink
-      >
-    </li>
-    <li class="itemMobMenu">
-      <NuxtLink to="/" @click="$emit('close')" class="link itemLinkMenu"
-        >Идея</NuxtLink
-      >
-    </li>
+    <MobileMenuItem v-for="(link, index) in links" :key="index" :link="link" />
   </ul>
 </template>
 
@@ -35,4 +23,10 @@
 }
 </style>
 
-<script setup></script>
+<script setup>
+const links = [
+  { label: "О нас", to: "/" },
+  { label: "Карта", to: "/map" },
+  { label: "Идея", to: "/idea" },
+];
+</script>
