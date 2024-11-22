@@ -43,14 +43,5 @@ const closeMenu = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 3%;
-
-  @include tablet {
-    padding: 1% 4%;
-  }
-
-  @include desktop {
-    padding: 1% 7%;
-  }
 }
 </style>

@@ -1,38 +1,43 @@
 <template>
   <nav class="navbar">
     <ul class="navbarList list">
-      <NavbarItem v-for="(link, index) in links" :key="index" :link="link" />
+      <NavbarItem v-for="link in linksNavbar" :key="link.id" :link="link" />
     </ul>
   </nav>
 </template>
 
 <script setup>
-const links = [
+const linksNavbar = [
   {
+    id: 1,
     label: "Домой",
     to: "/categories",
     icon: "/img/icons/house.svg",
     text: "Вернуться на главную страницу",
   },
   {
+    id: 2,
     label: "Календарь",
     to: "/",
     icon: "/img/icons/сalendar.svg",
     text: "Календарь для выбора даты",
   },
   {
+    id: 3,
     label: "Категории",
     to: "/",
     icon: "/img/icons/category.svg",
     text: "Категории",
   },
   {
+    id: 4,
     label: "Поиск",
     to: "/",
     icon: "/img/icons/search.svg",
     text: "Поиск по сайту",
   },
   {
+    id: 5,
     label: "Кабинет",
     to: "/",
     icon: "/img/icons/profile.svg",

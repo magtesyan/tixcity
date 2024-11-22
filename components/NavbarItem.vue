@@ -16,9 +16,10 @@
 <script setup>
 defineProps({
   link: {
-    type: Object,
-    required: true,
-    validator: (value) => "to" in value && "label" in value && "icon" in value,
+    label: String,
+    to: String,
+    icon: String,
+    text: String,
   },
 });
 </script>
@@ -43,7 +44,6 @@ defineProps({
 .router-link-exact-active,
 .navbarLinkIcon {
   color: #ff0000;
-  stroke: #ff0000;
 }
 
 .navbarLinkIcon {

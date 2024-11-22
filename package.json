@@ -14,6 +14,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.8.2",
     "@nuxtjs/google-fonts": "^3.2.0",
     "nuxt": "^3.13.0",
     "nuxt-swiper": "^1.2.2",

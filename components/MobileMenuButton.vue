@@ -27,6 +27,16 @@
   width: 50px;
   height: 50px;
 
+  @include tablet {
+    width: 70px;
+    height: 70px;
+  }
+
+  @include desktop {
+    width: 80px;
+    height: 80px;
+  }
+
   &:hover {
     opacity: 0.8;
   }

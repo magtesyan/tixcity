@@ -84,6 +84,10 @@ const slides = slidesData.slides;
   }
 }
 
+.controlSlideInfo {
+  width: 100%;
+}
+
 .contentSlideContainer {
   margin-top: auto;
   margin-bottom: 80px;
@@ -94,7 +98,8 @@ const slides = slidesData.slides;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: flex-start;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    padding: 0 120px;
   }
 }
 
@@ -123,7 +128,7 @@ const slides = slidesData.slides;
 
   @include desktop {
     margin-bottom: 25px;
-    @include font(48px, 80%, 700, $titleText);
+    @include font(46px, 80%, 700, $titleText);
   }
 }
 
