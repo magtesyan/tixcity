@@ -1,13 +1,7 @@
 <template>
   <li class="navbarItem">
     <NuxtLink :to="link.to" class="link navbarLink">
-      <img
-        :src="link.icon"
-        width="24"
-        height="24"
-        :alt="link.text"
-        class="navbarLinkIcon"
-      />
+      <Icon :name="link.icon" class="navbarLinkIcon" />
       <span class="navbarLinkTitle">{{ link.label }}</span>
     </NuxtLink>
   </li>

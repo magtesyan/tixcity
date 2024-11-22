@@ -2,9 +2,13 @@
   <header class="header">
     <div class="containerHeader">
       <Logo />
-      <MobileMenuButton @toggle="toggleMenu" />
     </div>
-    <MobileMenu v-if="isOpenMenu" @close="closeMenu" />
+    <ButtonToggle
+      :isOpen="isOpenMenu"
+      :menuToggleTitle="{ open: 'Меню', close: 'Закрыть' }"
+      @toggle="toggleMenu"
+    />
+    <MobileMenu :isOpen="isOpenMenu" @close="closeMenu" />
   </header>
 </template>
 
@@ -29,19 +33,11 @@ const closeMenu = () => {
   top: 0;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px);
-  box-shadow: inset 0 -1px 10px -12px #ffffff;
-
-  @include tablet {
-    padding: 0 4%;
-  }
 }
 
 .containerHeader {
   width: 100%;
-  justify-content: space-between;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 </style>

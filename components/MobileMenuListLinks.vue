@@ -6,8 +6,6 @@
 
 <style lang="scss" scoped>
 .listLinksMenu {
-  position: absolute;
-  background-color: rgba(12, 12, 12, 0.54);
   padding: 50px 20px;
   width: 70%;
   flex-direction: column;
