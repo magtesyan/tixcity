@@ -35,14 +35,10 @@ defineProps({
   padding: 7px 0;
 }
 
-.router-link-exact-active,
-.navbarLinkIcon {
-  color: #ff0000;
-}
-
 .navbarLinkIcon {
   width: 24px;
   height: 24px;
+  margin-bottom: 2px;
 
   @include tablet {
     width: 26px;
@@ -51,10 +47,10 @@ defineProps({
 }
 
 .navbarLinkTitle {
-  @include font(10px, 16px, 500);
+  @include font(12px, 16px, 300);
 
   @include tablet {
-    @include font(12px, 16px, 500);
+    @include font(12px, 16px, 300);
   }
 }
 </style>

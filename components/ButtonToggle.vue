@@ -1,8 +1,11 @@
 <template>
   <button class="button menuToggle" @click="$emit('toggle')">
-    <span class="menuToggleTitle">{{
-      isOpen ? menuToggleTitle.close : menuToggleTitle.open
-    }}</span>
+    <div class="menuToggleTitle" v-if="isOpen">
+      <Icon :name="menuToggleTitle.close" class="icon" />
+    </div>
+    <div class="menuToggleTitle" v-else>
+      <Icon :name="menuToggleTitle.open" class="icon" />
+    </div>
   </button>
 </template>
 

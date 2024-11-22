@@ -5,7 +5,10 @@
     </div>
     <ButtonToggle
       :isOpen="isOpenMenu"
-      :menuToggleTitle="{ open: 'Меню', close: 'Закрыть' }"
+      :menuToggleTitle="{
+        open: 'humbleicons:bars',
+        close: 'humbleicons:times',
+      }"
       @toggle="toggleMenu"
     />
     <MobileMenu :isOpen="isOpenMenu" @close="closeMenu" />
