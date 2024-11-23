@@ -112,7 +112,7 @@ const slides = slidesData.slides;
   }
 
   @include desktop {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 }
 

@@ -1,6 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
+  devtools: { enabled: true },
+
+  modules: [
+    "@nuxt/eslint",
+    "nuxt-swiper",
+    "@nuxtjs/google-fonts",
+    "@nuxt/icon",
+  ],
   vite: {
     css: {
       preprocessorOptions: {
@@ -30,13 +38,7 @@ export default defineNuxtConfig({
     },
     display: "swap",
   },
-  devtools: { enabled: true },
-  modules: [
-    "@nuxt/eslint",
-    "nuxt-swiper",
-    "@nuxtjs/google-fonts",
-    "@nuxt/icon",
-  ],
+
   swiper: {
     styleLang: "scss",
   },
