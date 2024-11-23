@@ -1,6 +1,4 @@
-@import "variables";
 @import "global";
-@import "mixins";
 
 body {
   @include font(16px, 19px, 400, $fontText);
