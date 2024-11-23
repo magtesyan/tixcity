@@ -59,11 +59,11 @@ const linksNavbar = [
   grid-template-columns: 1fr 1fr 25% 1fr 1fr;
 
   @include tablet {
-    padding: 1% 4%;
+    padding: 1% 4% 0;
   }
 
   @include desktop {
-    padding: 1% 20%;
+    padding: 1% 20% 0;
     grid-template-columns: 1fr 1fr 15% 1fr 1fr;
   }
 }

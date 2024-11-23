@@ -18,15 +18,17 @@ defineProps({
 
 <style lang="scss" scoped>
 .menuToggle {
-  min-width: 50px;
-  min-height: 50px;
+  width: 50px;
+  height: 50px;
   @include centered;
   z-index: 1;
   background: $secondaryColor;
+  right: 0;
+  position: absolute;
 
   @include tablet {
-    min-width: 70px;
-    min-height: 70px;
+    width: 65px;
+    height: 65px;
   }
 }
 </style>

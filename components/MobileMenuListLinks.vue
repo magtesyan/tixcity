@@ -11,8 +11,11 @@
   flex-direction: column;
   @include centered;
 
-  border: 1px solid rgb(0 0 0 / 13%);
-  box-shadow: -5px -3px 17px 0 rgb(47, 47, 47, 0.4);
+  backdrop-filter: blur(15px) saturate(81%);
+  -webkit-backdrop-filter: blur(15px) saturate(81%);
+  background-color: rgba(17, 25, 40, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .itemMobMenu {

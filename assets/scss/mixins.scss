@@ -1,4 +1,4 @@
-@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: "Oswald") {
+@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: $fontText) {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;

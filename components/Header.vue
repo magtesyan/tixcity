@@ -1,8 +1,6 @@
 <template>
   <header class="header">
-    <div class="containerHeader">
-      <Logo />
-    </div>
+    <Logo />
     <ButtonToggle
       :isOpen="isOpenMenu"
       :menuToggleTitle="{
@@ -36,11 +34,5 @@ const closeMenu = () => {
   top: 0;
   position: fixed;
   width: 100%;
-}
-
-.containerHeader {
-  width: 100%;
-  display: flex;
-  align-items: center;
 }
 </style>

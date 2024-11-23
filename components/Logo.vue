@@ -19,10 +19,10 @@
   padding: 10px 10px;
 
   @include tablet {
-    padding: 13px 35px;
+    padding: 10px 35px;
   }
   @include desktop {
-    padding: 17px 40px;
+    padding: 10px 40px;
   }
 }
 

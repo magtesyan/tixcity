@@ -23,6 +23,10 @@ defineProps({
   position: relative;
   flex-direction: column;
   @include centered;
+
+  &:hover {
+    background: red;
+  }
 }
 
 .navbarItem:nth-child(3) {
@@ -37,6 +41,7 @@ defineProps({
   align-items: center;
   text-decoration: none;
   padding: 7px 0;
+  width: 100%;
 }
 
 .navbarLinkIcon {
@@ -47,6 +52,7 @@ defineProps({
   @include tablet {
     width: 26px;
     height: 26px;
+    margin-bottom: 4px;
   }
 }
 
