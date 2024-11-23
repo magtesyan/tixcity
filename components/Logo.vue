@@ -2,7 +2,7 @@
   <NuxtLink to="/" class="logo">
     <img
       class="logoIcon"
-      src="../public/img/logo/logo-mobile.png"
+      src="/img/logo/logo-mobile.png"
       width="130"
       height="31"
       alt="Логотип сайта по продаже билетов"
@@ -19,10 +19,10 @@
   padding: 10px 10px;
 
   @include tablet {
-    padding: 13px 0;
+    padding: 13px 35px;
   }
   @include desktop {
-    padding: 17px 0;
+    padding: 17px 40px;
   }
 }
 

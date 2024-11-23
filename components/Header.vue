@@ -6,8 +6,8 @@
     <ButtonToggle
       :isOpen="isOpenMenu"
       :menuToggleTitle="{
-        open: 'humbleicons:bars',
-        close: 'humbleicons:times',
+        open: 'streamline:interface-setting-menu-1-button-parallel-horizontal-lines-menu-navigation-three-hamburger',
+        close: 'streamline:delete-1',
       }"
       @toggle="toggleMenu"
     />

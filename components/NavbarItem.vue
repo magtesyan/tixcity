@@ -25,6 +25,10 @@ defineProps({
   @include centered;
 }
 
+.navbarItem:nth-child(3) {
+  background: $background-primary;
+}
+
 .navbarLink {
   @include font(12px, 14px, 400, "Oswald");
   letter-spacing: 0.03rem;

@@ -17,7 +17,6 @@
 
 .itemMobMenu {
   padding: 15px 0;
-  color: #ffffff;
 }
 </style>
 
