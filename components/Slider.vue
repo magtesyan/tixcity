@@ -20,7 +20,7 @@
               <div class="contentSlideInfo">
                 <div class="breadcramc">1/2/3</div>
                 <h3 class="slideTitle title">{{ slide.title }}</h3>
-                <div class="dateInfo">
+                <div class="dateInfoWrapper">
                   <div class="containerDateInfo">
                     <p class="slideEventYear">{{ slide.year }}</p>
                     <div class="day">
@@ -118,21 +118,21 @@ const slides = slidesData.slides;
 
 .slideTitle {
   margin-bottom: 15px;
-  @include font(37px, 80%, 700, $titleText);
+  @include font(42px, 80%, 700, $titleText);
   color: $primaryColor;
 
   @include tablet {
     margin-bottom: 20px;
-    @include font(42px, 80%, 700, $titleText);
+    @include font(54px, 80%, 700, $titleText);
   }
 
   @include desktop {
     margin-bottom: 25px;
-    @include font(46px, 80%, 700, $titleText);
+    @include font(64px, 80%, 700, $titleText);
   }
 }
 
-.dateInfo {
+.dateInfoWrapper {
   min-width: 120px;
   max-width: fit-content;
   margin-bottom: 20px;
@@ -151,7 +151,7 @@ const slides = slidesData.slides;
 }
 
 .slideEventYear {
-  @include font(28px, 32px, 800, $titleText);
+  @include font(28px, 29px, 800, $titleText);
 }
 
 .slideEventDay {
