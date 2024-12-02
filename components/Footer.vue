@@ -13,11 +13,8 @@
   position: fixed;
   width: 100%;
   bottom: 0;
-  min-height: 60px;
-  backdrop-filter: blur(10px);
-  box-shadow: inset 0 -1px 10px -12px #ffffff;
-
-  border-top-right-radius: 14px;
-  border-top-left-radius: 14px;
+  background: #181818b3;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -2px 10px #121212;
 }
 </style>

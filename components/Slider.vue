@@ -60,10 +60,11 @@ const slides = slidesData.slides;
 }
 
 .swiperSlide {
-  width: 100%;
+  max-width: 100%;
+
   height: auto;
   display: block;
-  object-fit: cover;
+  background-size: cover;
   background-position: center;
 
   background-repeat: no-repeat;
@@ -74,10 +75,16 @@ const slides = slidesData.slides;
   height: 100%;
   background: linear-gradient(
     0deg,
-    rgba(31, 31, 31, 1) 27%,
-    rgba(32, 31, 31, 0.594964035418855) 45%,
-    rgba(32, 31, 31, 0.7322189373796393) 53%
+    rgb(18 18 18 / 31%) 10%,
+    rgba(32, 31, 31, 0.5949640354) 45%,
+    rgb(23 23 23 / 73%) 74%
   );
+  // background: linear-gradient(
+  //   0deg,
+  //   rgb(31, 31, 31) 10%,
+  //   rgba(32, 31, 31, 0.5949640354) 45%,
+  //   rgba(29, 31, 31, 0.7322189374) 74%
+  // );
 
   @include tablet {
     align-content: center;

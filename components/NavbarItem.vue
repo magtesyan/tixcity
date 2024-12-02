@@ -31,16 +31,16 @@ defineProps({
 
 .navbarItem:nth-child(3) {
   background: $background-primary;
+  box-shadow: 0px 0px 0px #2d2d2d;
 }
 
 .navbarLink {
   @include font(12px, 14px, 400, "Oswald");
+  padding: 10px 0;
   letter-spacing: 0.03rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  padding: 7px 0;
   width: 100%;
 }
 
@@ -57,10 +57,16 @@ defineProps({
 }
 
 .navbarLinkTitle {
-  @include font(12px, 16px, 300);
+  @include font(12px, 15px, 300);
+  letter-spacing: 1px;
 
   @include tablet {
-    @include font(12px, 16px, 300);
+    @include font(14px, 16px, 300);
+  }
+
+  @include desktop {
+    @include font(14px, 16px, 400);
+    letter-spacing: 1px;
   }
 }
 </style>
