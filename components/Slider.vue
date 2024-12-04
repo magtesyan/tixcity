@@ -78,12 +78,6 @@ const slides = slidesData.slides;
     rgba(32, 31, 31, 0.5949640354) 45%,
     rgb(23 23 23 / 73%) 74%
   );
-  // background: linear-gradient(
-  //   0deg,
-  //   rgb(31, 31, 31) 10%,
-  //   rgba(32, 31, 31, 0.5949640354) 45%,
-  //   rgba(29, 31, 31, 0.7322189374) 74%
-  // );
 
   @include tablet {
     align-content: center;
@@ -105,7 +99,7 @@ const slides = slidesData.slides;
     grid-template-columns: 1fr auto;
     align-items: flex-start;
     margin-bottom: 30px;
-    padding: 0 120px;
+    padding: 0 20%;
   }
 }
 
