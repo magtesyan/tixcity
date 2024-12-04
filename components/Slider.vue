@@ -3,7 +3,6 @@
     <h2 class="visualyHidden">Слайдер</h2>
     <div class="content">
       <Swiper
-        :modules="[SwiperEffectCreative, SwiperEffectCoverflow]"
         :slides-per-view="1"
         :grab-cursor="true"
         :pagination="true"
@@ -31,7 +30,7 @@
                 </div>
               </div>
               <div class="controlSlideInfo">
-                <NuxtLink class="buyTicketButton">подробнее</NuxtLink>
+                <NuxtLink to="#" class="buyTicketButton">подробнее</NuxtLink>
               </div>
             </div>
           </div>

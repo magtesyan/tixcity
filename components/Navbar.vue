@@ -54,16 +54,15 @@ const linksNavbar = [
 }
 
 .navbarList {
-  padding: 0 2%;
   display: grid;
-  grid-template-columns: 1fr 1fr 25% 1fr 1fr;
+  grid-template-columns: 1fr 1fr 20% 1fr 1fr;
 
   @include tablet {
-    padding: 1% 4% 0;
+    padding: 0 4% 0;
   }
 
   @include desktop {
-    padding: 1% 20% 0;
+    padding: 0 20% 0;
     grid-template-columns: 1fr 1fr 15% 1fr 1fr;
   }
 }

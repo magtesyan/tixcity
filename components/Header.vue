@@ -1,6 +1,7 @@
 <template>
   <header class="header">
     <Logo />
+
     <ButtonToggle
       :isOpen="isOpenMenu"
       :menuToggleTitle="{

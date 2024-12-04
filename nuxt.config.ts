@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   css: ["@/assets/scss/main.scss"],
@@ -41,15 +40,12 @@ export default defineNuxtConfig({
     },
     display: "swap",
   },
-
-  swiper: {
-    styleLang: "scss",
-  },
   eslint: {
     // config: {
     //   stylistic: true,
     // },
   },
+
   components: [
     {
       path: "~/components",
