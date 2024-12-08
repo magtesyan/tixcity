@@ -1,7 +1,6 @@
 <template>
   <div>
     <Slider />
-    <Categories />
   </div>
 </template>
 

@@ -29,13 +29,14 @@ $bg-stage: url("/public/img/screen-background/bg-stage.jpg");
 $bg-opera: url("/public/img/screen-background/theater.png");
 
 .wrapperApp {
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .main {
-  margin-top: 63px;
-  margin-bottom: 58px;
   flex: 1;
   overflow-y: auto;
 }

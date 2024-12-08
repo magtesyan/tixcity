@@ -8,12 +8,13 @@
 
 <style lang="scss">
 .footer {
+  display: flex;
+  z-index: 9;
   position: fixed;
   width: 100%;
   bottom: 0;
-  background: $background-primary;
-  box-shadow:
-    0px 10px 15px 0px #1d1d1d,
-    0px 3px 7px 0px #161616;
+  background: #181818b3;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -2px 10px #121212;
 }
 </style>

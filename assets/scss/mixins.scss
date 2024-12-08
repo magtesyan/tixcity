@@ -1,4 +1,4 @@
-@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: "Playfair") {
+@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: $fontText) {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;
@@ -14,5 +14,27 @@
 @mixin desktop {
   @media (min-width: $desktop) {
     @content;
+  }
+}
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsivePadding($prop) {
+  #{$prop}: clamp($minPaddingMob, 3vw, $maxPadding);
+
+  & {
+    @media (min-width: $tablet) {
+      #{$prop}: clamp($minPaddingTablet, 7vw, $maxPadding);
+    }
+  }
+
+  & {
+    @media (min-width: $desktop) {
+      #{$prop}: clamp($minPaddingDesctop, 10vw, $maxPadding);
+    }
   }
 }

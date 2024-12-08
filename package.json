@@ -14,6 +14,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.8.2",
     "@nuxtjs/google-fonts": "^3.2.0",
     "nuxt": "^3.13.0",
     "nuxt-swiper": "^1.2.2",
@@ -21,6 +22,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@iconify-json/mynaui": "^1.2.7",
+    "@iconify-json/streamline": "^1.2.1",
     "@nuxt/eslint": "^0.5.7",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",

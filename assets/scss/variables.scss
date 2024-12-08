@@ -1,8 +1,18 @@
 $background: #181818;
 $background-primary: #1c1c1c;
-$primaryColor: #ffffff;
 
-$ff: "Playfair Display";
+$titleText: "Playfair";
+$fontText: "Oswald";
+
+$primaryColor: #e6e6e6;
+$secondaryColor: #c33241;
 
 $tablet: 768px;
 $desktop: 1024px;
+$nobile: 320px;
+$nobile: 321px;
+
+$minPaddingMob: 12px;
+$minPaddingTablet: 24px;
+$minPaddingDesctop: 128px;
+$maxPadding: 150px;
