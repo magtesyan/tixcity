@@ -6,7 +6,7 @@
     {
       "label": "Git Add and Commit",
       "type": "shell",
-      "command": "git add . && git commit -m '${input:commitMessage}' && git push origin ${input:branchName}",
+      "command": "git add . && git commit -m '${input:commitMessage}' && git push origin '${input:branchName}'",
       "problemMatcher": [],
       "group": {
         "kind": "build",
