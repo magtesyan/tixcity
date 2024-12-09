@@ -1,5 +1,5 @@
 {
-  "categories": [
+  "categoriesName": [
     { "name": "Театр", "path": "/theaters" },
     { "name": "Дети", "path": "/kids" },
     { "name": "Спорт", "path": "/sport" },

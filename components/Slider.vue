@@ -192,10 +192,6 @@ const slides = slidesData.slides;
     min-width: 100px;
     max-width: 120px;
   }
-
-  @include desktop {
-    padding: 25px 0;
-  }
 }
 
 .controlSlideInfo {
