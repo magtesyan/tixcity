@@ -3,14 +3,14 @@
     <Logo />
 
     <ButtonToggle
-      :isOpen="isOpenMenu"
-      :menuToggleTitle="{
+      :is-open="isOpenMenu"
+      :menu-toggle-title="{
         open: 'streamline:interface-setting-menu-1-button-parallel-horizontal-lines-menu-navigation-three-hamburger',
         close: 'streamline:delete-1',
       }"
       @toggle="toggleMenu"
     />
-    <MobileMenu :isOpen="isOpenMenu" @close="closeMenu" />
+    <MobileMenu :is-open="isOpenMenu" @close="closeMenu" />
   </header>
 </template>
 

@@ -7,11 +7,12 @@ export default withNuxt({
     'no-console': 'error',
     quotes: ['error', 'single'],
     'vue/multi-word-component-names': 'off',
+
     'vue/html-self-closing': [
       'error',
       {
         html: {
-          void: 'always',
+          void: 'never',
           normal: 'always',
           component: 'always',
         },
