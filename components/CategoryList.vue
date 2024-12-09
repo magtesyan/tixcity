@@ -13,8 +13,8 @@
 </template>
 
 <script setup>
-import categoriesData from "../assets/data/categories.json";
-const categoriesName = categoriesData.categoriesName;
+import categoriesData from '../assets/data/categories.json'
+const categoriesName = categoriesData.categoriesName
 
 defineProps({
   categories: {
@@ -23,21 +23,21 @@ defineProps({
   },
   categoriesList: {
     type: String,
-    default: "",
+    default: '',
   },
   categoriesItem: {
     type: String,
-    default: "",
+    default: '',
   },
   categoriesLink: {
     type: String,
-    default: "",
+    default: '',
   },
   categoriesLinkTitle: {
     type: String,
-    default: "",
+    default: '',
   },
-});
+})
 </script>
 
 <style lang="scss" scoped></style>

@@ -15,17 +15,17 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const isOpenMenu = ref(false);
+const isOpenMenu = ref(false)
 
 const toggleMenu = () => {
-  isOpenMenu.value = !isOpenMenu.value;
-};
+  isOpenMenu.value = !isOpenMenu.value
+}
 
 const closeMenu = () => {
-  isOpenMenu.value = false;
-};
+  isOpenMenu.value = false
+}
 </script>
 
 <style lang="scss" scoped>
