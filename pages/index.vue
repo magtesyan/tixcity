@@ -7,8 +7,8 @@
 
 <script setup>
 definePageMeta({
-  layout: "default",
-});
+  layout: 'default',
+})
 </script>
 
 <style lang="scss"></style>

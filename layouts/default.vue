@@ -9,24 +9,24 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-import { computed } from "vue";
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
-const route = useRoute();
+const route = useRoute()
 const backgroundClass = computed(() => {
-  const category = route.params.categories || "default";
-  return `bg bg_${category}`;
-});
+  const category = route.params.categories || 'default'
+  return `bg bg_${category}`
+})
 </script>
 
 <style lang="scss">
 $bg: no-repeat, center, cover;
-$bg-default: url("/public/img/screen-background/default.png");
-$bg-theaters: url("/public/img/venues/lenkom/king-play.webp");
-$bg-kids: url("/public/img/screen-background/bg-cirqe.jpg");
-$bg-sport: url("/public/img/screen-background/bg-sport.jpg");
-$bg-stage: url("/public/img/screen-background/bg-stage.jpg");
-$bg-opera: url("/public/img/screen-background/theater.png");
+$bg-default: url('/public/img/screen-background/default.png');
+$bg-theaters: url('/public/img/venues/lenkom/king-play.webp');
+$bg-kids: url('/public/img/screen-background/bg-cirqe.jpg');
+$bg-sport: url('/public/img/screen-background/bg-sport.jpg');
+$bg-stage: url('/public/img/screen-background/bg-stage.jpg');
+$bg-opera: url('/public/img/screen-background/theater.png');
 
 .wrapperApp {
   position: relative;

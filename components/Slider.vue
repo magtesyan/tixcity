@@ -41,9 +41,9 @@
 </template>
 
 <script setup lang="ts">
-import slidesData from "../assets/data/slides.json";
+import slidesData from '../assets/data/slides.json'
 
-const slides = slidesData.slides;
+const slides = slidesData.slides
 </script>
 
 <style lang="scss" scoped>
@@ -155,11 +155,11 @@ const slides = slidesData.slides;
 }
 
 .slideEventDay {
-  @include font(14px, 16px, 400, "Oswald");
+  @include font(14px, 16px, 400, 'Oswald');
 }
 
 .slideEventTime {
-  @include font(12px, 14px, 500, "Oswald");
+  @include font(12px, 14px, 500, 'Oswald');
 }
 
 @include tablet {
@@ -168,16 +168,16 @@ const slides = slidesData.slides;
   }
 
   .slideEventDay {
-    @include font(18px, 22px, 400, "Oswald");
+    @include font(18px, 22px, 400, 'Oswald');
   }
 
   .slideEventTime {
-    @include font(14px, 18px, 500, "Oswald");
+    @include font(14px, 18px, 500, 'Oswald');
   }
 }
 
 .buyTicketButton {
-  @include font(14px, 18px, 600, "Oswald");
+  @include font(14px, 18px, 600, 'Oswald');
   display: block;
   width: 100%;
   padding: 17px 0;

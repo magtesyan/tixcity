@@ -16,6 +16,7 @@
 
 <script setup>
 import { ref } from 'vue'
+defineEmits(['toggle'])
 
 const isOpenMenu = ref(false)
 

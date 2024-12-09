@@ -4,6 +4,14 @@
   </ul>
 </template>
 
+<script setup>
+const links = [
+  { label: 'О нас', to: '/' },
+  { label: 'Карта', to: '/' },
+  { label: 'Идея', to: '/' },
+]
+</script>
+
 <style lang="scss" scoped>
 .listLinksMenu {
   padding: 50px 20px;
@@ -22,11 +30,3 @@
   padding: 15px 0;
 }
 </style>
-
-<script setup>
-const links = [
-  { label: "О нас", to: "/" },
-  { label: "Карта", to: "/" },
-  { label: "Идея", to: "/" },
-];
-</script>

@@ -10,40 +10,40 @@
 const linksNavbar = [
   {
     id: 1,
-    label: "Домой",
-    to: "/",
-    icon: "streamline:home-3",
-    text: "Вернуться на главную страницу",
+    label: 'Домой',
+    to: '/',
+    icon: 'streamline:home-3',
+    text: 'Вернуться на главную страницу',
   },
   {
     id: 2,
-    label: "Календарь",
-    to: "#",
-    icon: "streamline:interface-calendar-date-month-thirty-thirty-calendar-date-week-day-month",
-    text: "Календарь для выбора даты",
+    label: 'Календарь',
+    to: '#',
+    icon: 'streamline:interface-calendar-date-month-thirty-thirty-calendar-date-week-day-month',
+    text: 'Календарь для выбора даты',
   },
   {
     id: 3,
-    label: "Категории",
-    to: "/categories",
-    icon: "streamline:interface-dashboard-layout-square-app-application-dashboard-home-layout-square",
-    text: "Категории",
+    label: 'Категории',
+    to: '/categories',
+    icon: 'streamline:interface-dashboard-layout-square-app-application-dashboard-home-layout-square',
+    text: 'Категории',
   },
   {
     id: 4,
-    label: "Поиск",
-    to: "#",
-    icon: "streamline:magnifying-glass",
-    text: "Поиск по сайту",
+    label: 'Поиск',
+    to: '#',
+    icon: 'streamline:magnifying-glass',
+    text: 'Поиск по сайту',
   },
   {
     id: 5,
-    label: "Кабинет",
-    to: "#",
-    icon: "streamline:interface-user-single-close-geometric-human-person-single-up-user",
-    text: "Личный кабинет",
+    label: 'Кабинет',
+    to: '#',
+    icon: 'streamline:interface-user-single-close-geometric-human-person-single-up-user',
+    text: 'Личный кабинет',
   },
-];
+]
 </script>
 
 <style lang="scss">

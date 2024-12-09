@@ -10,12 +10,16 @@
 <script setup>
 defineProps({
   link: {
-    label: String,
-    to: String,
-    icon: String,
-    text: String,
+    type: Object,
+    required: true,
+    default: () => ({
+      label: '',
+      to: '',
+      icon: '',
+      text: '',
+    }),
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
@@ -35,7 +39,7 @@ defineProps({
 }
 
 .navbarLink {
-  @include font(12px, 14px, 400, "Oswald");
+  @include font(12px, 14px, 400, 'Oswald');
   padding: 10px 0;
   letter-spacing: 0.03rem;
   display: flex;

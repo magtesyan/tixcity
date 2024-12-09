@@ -1,19 +1,23 @@
 <template>
   <button class="button menuToggle" @click="$emit('toggle')">
-    <div class="menuToggleTitle" v-if="isOpen">
+    <div v-if="isOpen" class="menuToggleTitle">
       <Icon :name="menuToggleTitle.close" class="icon" />
     </div>
-    <div class="menuToggleTitle" v-else>
+    <div v-else class="menuToggleTitle">
       <Icon :name="menuToggleTitle.open" class="icon" />
     </div>
   </button>
 </template>
 
 <script setup>
+defineEmits(['toggle'])
 defineProps({
   isOpen: Boolean,
-  menuToggleTitle: Object,
-});
+  menuToggleTitle: {
+    type: Object,
+    required: true,
+  },
+})
 </script>
 
 <style lang="scss" scoped>
