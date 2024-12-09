@@ -49,13 +49,13 @@
   letter-spacing: 0.03%;
   display: block;
   padding: 10px 0;
-  color: $deActiveColor;
+  color: $primaryColor;
 }
 
 @include desktop {
   @include font(16px, 19px, 300);
   letter-spacing: 0.03%;
-  color: $deActiveColor;
+  color: $primaryColor;
 }
 
 ::v-deep(.categoriesLink) {

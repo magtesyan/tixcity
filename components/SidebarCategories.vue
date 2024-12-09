@@ -55,7 +55,7 @@
 }
 
 ::v-deep(.categoriesLinkTitle) {
-  @include font(12px, 16px, 300);
+  @include font(16px, 19px, 300);
   letter-spacing: 0.05rem;
 }
 </style>
