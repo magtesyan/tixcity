@@ -1,12 +1,14 @@
 <template>
   <div class="sidebarCategories">
-    <CategoryList
-      :categories="categories"
-      categories-list="categoriesList"
-      categories-item="categoriesItem"
-      categories-link="categoriesLink"
-      categories-link-title="categoriesLinkTitle"
-    />
+    <div class="sidebarContainer">
+      <CategoryList
+        :categories="categories"
+        categories-list="categoriesList"
+        categories-item="categoriesItem"
+        categories-link="categoriesLink"
+        categories-link-title="categoriesLinkTitle"
+      />
+    </div>
   </div>
 </template>
 
@@ -14,17 +16,45 @@
 
 <style lang="scss" scoped>
 .sidebarCategories {
-  position: absolute;
   display: flex;
   align-items: center;
+  width: 13%;
+  position: absolute;
   left: 0;
   z-index: 1;
   height: 100vh;
+  justify-content: end;
+}
+
+.sidebarContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .categoriesList {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+::v-deep(.categoriesItem) {
+  position: relative;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+::v-deep(.categoriesLink) {
   display: flex;
   transform: rotate(-90deg);
-  gap: 15px;
+  white-space: nowrap;
+}
+
+::v-deep(.categoriesLinkTitle) {
+  @include font(12px, 16px, 300);
+  letter-spacing: 0.05rem;
 }
 </style>

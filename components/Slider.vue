@@ -99,7 +99,7 @@ const slides = slidesData.slides;
     grid-template-columns: 1fr auto;
     align-items: flex-start;
     margin-bottom: 30px;
-    padding: 0 20%;
+    padding: 0 18%;
   }
 }
 
