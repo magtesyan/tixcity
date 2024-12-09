@@ -20,5 +20,13 @@ export default withNuxt({
         math: 'always',
       },
     ],
+    '@typescript-eslint/no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: true,
+      },
+    ],
   },
 })

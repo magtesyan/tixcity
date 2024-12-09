@@ -1,6 +1,7 @@
 <template>
   <div class="sidebarCategories">
     <div class="sidebarContainer">
+      <BreadCrumbs />
       <CategoryList
         :categories="categories"
         categories-list="categoriesList"
