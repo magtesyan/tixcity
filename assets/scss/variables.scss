@@ -1,18 +1,17 @@
-$background: #181818;
-$background-primary: #1c1c1c;
+//**Typograf**//
+$titleText: 'Playfair';
+$fontText: 'Oswald';
 
-$titleText: "Playfair";
-$fontText: "Oswald";
+//**color**//
+$primaryColor: rgba(229, 231, 232, 0.443);
+$secondaryColor: rgb(236, 55, 72);
+$isActive: rgb(229, 231, 232);
+$noActive: rgb(141, 138, 138, 0.561);
+$surface: rgba(27, 27, 27, 0.7);
 
-$primaryColor: #e5e7e8;
-$secondaryColor: #ec3748;
-
+//** BreakPoints **//
 $tablet: 768px;
 $desktop: 1024px;
-$nobile: 320px;
-$nobile: 321px;
 
-$minPaddingMob: 12px;
-$minPaddingTablet: 24px;
-$minPaddingDesctop: 128px;
-$maxPadding: 150px;
+$background: #181818;
+$background-primary: #1c1c1c;

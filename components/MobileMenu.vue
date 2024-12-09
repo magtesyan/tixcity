@@ -7,7 +7,7 @@
 <script setup>
 defineProps({
   isOpen: Boolean,
-});
+})
 </script>
 
 <style lang="scss" scoped>
@@ -21,8 +21,8 @@ defineProps({
   height: 100%;
   backdrop-filter: blur(15px) saturate(81%);
   -webkit-backdrop-filter: blur(5px) saturate(81%);
-  background-color: rgba(16, 16, 16, 0.7);
-  color: white;
+  background-color: $surface;
+  color: $primaryColor;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 

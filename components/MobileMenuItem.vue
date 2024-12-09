@@ -20,6 +20,6 @@ defineProps({
 <style lang="scss" scoped>
 .itemMobMenu {
   padding: 15px 0;
-  color: #ffffff;
+  color: $primaryColor;
 }
 </style>

@@ -29,7 +29,7 @@ defineProps({
   @include centered;
 
   &:hover {
-    background: red;
+    background: $secondaryColor;
   }
 }
 
