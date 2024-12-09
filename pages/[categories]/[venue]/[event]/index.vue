@@ -16,18 +16,18 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-import eventsData from "../../../../assets/data/events.json";
+import { useRoute } from 'vue-router'
+import eventsData from '../../../../assets/data/events.json'
 
-const route = useRoute();
-const category = route.params.categories;
-const venues = route.params.venue;
-const eventPath = route.params.event;
-const event = eventsData[eventPath] || [];
+const route = useRoute()
+const category = route.params.categories
+const venues = route.params.venue
+const eventPath = route.params.event
+const event = eventsData[eventPath] || []
 
 function formatDate(dataStr) {
-  const option = { year: "numeric", month: "long", day: "numeric" };
-  return new Date(dataStr).toLocaleDateString("ru-RU", option);
+  const option = { year: 'numeric', month: 'long', day: 'numeric' }
+  return new Date(dataStr).toLocaleDateString('ru-RU', option)
 }
 </script>
 

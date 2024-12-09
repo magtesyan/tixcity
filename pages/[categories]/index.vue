@@ -26,21 +26,21 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-import venuesData from "../../assets/data/venues.json";
+import { useRoute } from 'vue-router'
+import venuesData from '../../assets/data/venues.json'
 
-const route = useRoute();
-const category = route.params.categories;
-const venues = venuesData[category] || [];
+const route = useRoute()
+const category = route.params.categories
+const venues = venuesData[category] || []
 
 const categoryTitle =
   {
-    theaters: "Театр",
-    kids: "Дети",
-    sport: "Спорт",
-    stage: "Эстрада",
-    opera: "Опера и балет",
-  }[category] || Рубрика;
+    theaters: 'Театр',
+    kids: 'Дети',
+    sport: 'Спорт',
+    stage: 'Эстрада',
+    opera: 'Опера и балет',
+  }[category] || Рубрика
 </script>
 
 <style lang="scss">

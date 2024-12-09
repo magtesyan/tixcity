@@ -1,13 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
 .section {
   padding: 10px 12px 10px;
 }
 
-.title {
-  display: block;
-  text-align: center;
+.button {
+  border: none;
+
+  cursor: pointer;
 }
 
+.title,
 .text {
+  display: block;
   margin: 0;
 }
 
@@ -21,14 +36,6 @@
   text-align: center;
   width: 150px;
   margin: auto;
-}
-
-.overlayBlur {
-  background: rgb(93, 93, 93, 30%);
-  backdrop-filter: blur(5px);
-
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 .list {
