@@ -35,18 +35,18 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-import repertoireDate from "./../../assets/data/repertoire.json";
+import { useRoute } from 'vue-router'
+import repertoireDate from './../../assets/data/repertoire.json'
 
-const route = useRoute();
+const route = useRoute()
 
-const category = route.params.categories;
-const venues = route.params.venue;
-const repertoire = repertoireDate[venues] || [];
+const category = route.params.categories
+const venues = route.params.venue
+const repertoire = repertoireDate[venues] || []
 
 function formatDate(dataStr) {
-  const option = { month: "long", day: "numeric" };
-  return new Date(dataStr).toLocaleDateString("ru-RU", option);
+  const option = { month: 'long', day: 'numeric' }
+  return new Date(dataStr).toLocaleDateString('ru-RU', option)
 }
 </script>
 

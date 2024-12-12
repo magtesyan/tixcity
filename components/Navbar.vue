@@ -1,90 +1,69 @@
 <template>
   <nav class="navbar">
     <ul class="navbarList list">
-      <li class="navbarItem">
-        <NuxtLink class="navbarItemLink link" to="/">
-          <img
-            class="navbarLinkIcon"
-            src="/public/img/icons/house.svg"
-            height="24"
-            width="24"
-            alt=" вернуться на главный экран"
-          />
-          <span class="navbarLinkTitle">Домой</span>
-        </NuxtLink>
-      </li>
-      <li class="navbarItem">
-        <NuxtLink class="navbarItemLink link" to="/opera/opera">
-          <img
-            class="navbarLinkIcon"
-            src="/public/img/icons/сalendar.svg"
-            height="24"
-            width="24"
-            alt="Календарь для выбора нужной даты"
-          />
-          <span class="navbarLinkTitle">Календарь</span>
-        </NuxtLink>
-      </li>
-      <li class="navbarItem">
-        <NuxtLink class="navbarItemLink link" to="/opera/opera">
-          <img
-            class="navbarLinkIcon"
-            src="/public/img/icons/сalendar.svg"
-            height="24"
-            width="24"
-            alt="Календарь для выбора нужной даты"
-          />
-          <span class="navbarLinkTitle">Календарь</span>
-        </NuxtLink>
-      </li>
-      <li class="navbarItem">
-        <NuxtLink class="navbarItemLink link">
-          <img
-            class="navbarLinkIcon"
-            src="/public/img/icons/phone.svg"
-            height="24"
-            width="24"
-            alt="Позвонить"
-          />
-          <span class="navbarLinkTitle">Позвонить</span>
-        </NuxtLink>
-      </li>
+      <NavbarItem v-for="link in linksNavbar" :key="link.id" :link="link" />
     </ul>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+const linksNavbar = [
+  {
+    id: 1,
+    label: 'Домой',
+    to: '/',
+    icon: 'streamline:home-3',
+    text: 'Вернуться на главную страницу',
+  },
+  {
+    id: 2,
+    label: 'Календарь',
+    to: '#',
+    icon: 'streamline:interface-calendar-date-month-thirty-thirty-calendar-date-week-day-month',
+    text: 'Календарь для выбора даты',
+  },
+  {
+    id: 3,
+    label: 'Категории',
+    to: '/categories',
+    icon: 'streamline:interface-dashboard-layout-square-app-application-dashboard-home-layout-square',
+    text: 'Категории',
+  },
+  {
+    id: 4,
+    label: 'Поиск',
+    to: '#',
+    icon: 'streamline:magnifying-glass',
+    text: 'Поиск по сайту',
+  },
+  {
+    id: 5,
+    label: 'Кабинет',
+    to: '#',
+    icon: 'streamline:interface-user-single-close-geometric-human-person-single-up-user',
+    text: 'Личный кабинет',
+  },
+]
+</script>
 
 <style lang="scss">
 .navbar {
+  position: relative;
   width: 100%;
+  display: flex;
 }
+
 .navbarList {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 0;
-}
+  grid-template-columns: 1fr 1fr 20% 1fr 1fr;
 
-.navbarItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  @include tablet {
+    padding: 0 10% 0;
+  }
 
-.navbarItemLink {
-  @include font(12px, 16px, 300, "Roboto");
-  letter-spacing: 0.03rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: $primaryColor;
-  padding: 7px 0;
-}
-
-.navbarLinkIcon {
-  width: 26px;
-  height: 26px;
+  @include desktop {
+    padding: 0 20% 0;
+    grid-template-columns: 1fr 1fr 15% 1fr 1fr;
+  }
 }
 </style>
