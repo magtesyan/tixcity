@@ -1,18 +1,20 @@
 <template>
-  <div class="breadCrumbsContainer">
-    <ul class="breadCrumbsList list">
-      <li
-        v-for="(circle, index) in circles"
-        :key="index"
-        :class="[
-          'breadCrumbsItem',
-          'circle',
-          { active: activeIndex === index },
-        ]"
-      />
-    </ul>
-    <div class="line">
-      <!-- <p>sjbvhjsb jsfh</p> -->
+  <div class="breadCrumbs">
+    <div class="breadCrumbsContainer">
+      <ul class="breadCrumbsList list">
+        <li
+          v-for="(circle, index) in circles"
+          :key="index"
+          :class="[
+            'breadCrumbsItem',
+            'circle',
+            { active: activeIndex === index },
+          ]"
+        />
+      </ul>
+      <div class="line">
+        <!-- <p>sjbvhjsb jsfh</p> -->
+      </div>
     </div>
   </div>
 </template>
@@ -24,15 +26,21 @@ const activeIndex = ref(null)
 </script>
 
 <style lang="scss" scoped>
+.breadCrumbs {
+  display: flex;
+  align-items: center;
+}
+
 .breadCrumbsContainer {
+  height: 83%;
   display: flex;
   position: relative;
 }
 
 .line {
-  background: $surface;
+  background: $primaryColor;
   width: 2px;
-  height: 400px;
+  height: 100%;
   left: 3px;
   top: 0;
   position: absolute;

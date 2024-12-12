@@ -42,7 +42,7 @@
 
 ::v-deep(.categoriesItem) {
   position: relative;
-  height: 80px;
+  height: 110px;
   display: flex;
   flex-direction: row;
   align-items: center;
