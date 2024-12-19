@@ -27,6 +27,7 @@
                       <p class="slideEventTime">{{ slide.time }}</p>
                     </div>
                   </div>
+                  <Icon name="streamline:share-link" class="iconSlider" />
                 </div>
               </div>
               <div class="controlSlideInfo">
@@ -133,14 +134,9 @@ const slides = slidesData.slides
 }
 
 .dateInfoWrapper {
-  min-width: 120px;
-  max-width: fit-content;
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-  outline: 1px solid $secondaryColor;
-
-  @include tablet {
-    max-width: 150px;
-  }
 }
 
 .containerDateInfo {
@@ -148,6 +144,17 @@ const slides = slidesData.slides
   align-items: center;
   justify-content: space-between;
   padding: 5px 10px;
+  outline: 1px solid $secondaryColor;
+  margin-right: 15px;
+  width: 120px;
+
+  @include tablet {
+    width: 150px;
+  }
+
+  @include desktop {
+    width: 160px;
+  }
 }
 
 .slideEventYear {
@@ -173,6 +180,14 @@ const slides = slidesData.slides
 
   .slideEventTime {
     @include font(14px, 18px, 500, 'Oswald');
+  }
+}
+
+.iconSlider {
+  cursor: pointer;
+
+  &:hover {
+    color: $secondaryColor;
   }
 }
 

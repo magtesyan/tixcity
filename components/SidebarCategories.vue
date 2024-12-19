@@ -17,21 +17,31 @@
 
 <style lang="scss" scoped>
 .sidebarCategories {
-  display: flex;
-  align-items: center;
-  width: 13%;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  height: 100vh;
-  justify-content: end;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    width: 13%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    justify-content: end;
+  }
 }
 
 .sidebarContainer {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: flex-end;
+  @include tablet {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 60%;
+  }
+
+  @include desktop {
+    height: 70%;
+  }
 }
 
 .categoriesList {
@@ -39,6 +49,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 60px;
 }
 
 ::v-deep(.categoriesItem) {

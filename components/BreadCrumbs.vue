@@ -38,7 +38,7 @@ const activeIndex = ref(null)
 }
 
 .line {
-  background: $primaryColor;
+  background: $primaryBackground;
   width: 2px;
   height: 100%;
   left: 3px;
