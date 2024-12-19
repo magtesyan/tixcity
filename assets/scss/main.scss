@@ -1,10 +1,27 @@
-@import "variables";
 @import "global";
-@import "mixins";
 
 body {
-  @include font(14px, 18px, 400, "Playfair");
-  background-color: $background;
+  @include font(16px, 19px, 400, $fontText);
   margin: 0;
   height: 100vh;
+  width: 100%;
+  color: $primaryColor;
+}
+
+.container {
+  padding: 5% 3%;
+
+  @include tablet {
+    padding: 3% 4%;
+  }
+
+  @include desktop {
+    padding: 5% 15%;
+  }
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
