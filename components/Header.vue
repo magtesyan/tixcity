@@ -1,40 +1,40 @@
 <template>
   <header class="header">
-    <div class="content">
-      <div class="overlayBlur headerContent">
-        <NuxtLink to="/">
-          <img
-            class="logo"
-            src="../public/img/logo/logo-mobile.svg"
-            width="104"
-            height="53"
-            alt="Логотип сайта по продаже билетов"
-          />
-        </NuxtLink>
-      </div>
-    </div>
+    <Logo />
+
+    <ButtonToggle
+      :is-open="isOpenMenu"
+      :menu-toggle-title="{
+        open: 'streamline:interface-setting-menu-1-button-parallel-horizontal-lines-menu-navigation-three-hamburger',
+        close: 'streamline:delete-1',
+      }"
+      @toggle="toggleMenu"
+    />
+    <MobileMenu :is-open="isOpenMenu" @close="closeMenu" />
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+defineEmits(['toggle'])
+
+const isOpenMenu = ref(false)
+
+const toggleMenu = () => {
+  isOpenMenu.value = !isOpenMenu.value
+}
+
+const closeMenu = () => {
+  isOpenMenu.value = false
+}
+</script>
 
 <style lang="scss" scoped>
 .header {
+  display: flex;
+  z-index: 10;
   top: 0;
   position: fixed;
   width: 100%;
-  box-shadow:
-    0px 10px 15px 0px #1d1d1d,
-    0px 3px 7px 0px #161616;
-}
-
-.headerContent {
-  border-radius: 0;
-}
-
-.logo {
-  padding: 5px 0;
-  display: block;
-  margin: auto;
 }
 </style>

@@ -1,4 +1,4 @@
-@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: "Playfair") {
+@mixin font($fs: 16px, $lh: 19.5px, $fw: 400, $ff: $fontText) {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;
@@ -15,4 +15,10 @@
   @media (min-width: $desktop) {
     @content;
   }
+}
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
