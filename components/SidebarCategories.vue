@@ -22,12 +22,15 @@
   @include tablet {
     display: flex;
     align-items: center;
-    width: 13%;
     position: absolute;
     left: 0;
     z-index: 1;
     height: 100vh;
     justify-content: end;
+  }
+
+  @include desktop {
+    padding-left: 40px;
   }
 }
 
