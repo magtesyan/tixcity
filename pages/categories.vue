@@ -52,12 +52,6 @@
   color: $primaryColor;
 }
 
-@include desktop {
-  @include font(16px, 19px, 300);
-  letter-spacing: 0.03%;
-  color: $primaryColor;
-}
-
 ::v-deep(.categoriesLink) {
   width: 100%;
 }

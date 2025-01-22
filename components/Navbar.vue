@@ -25,7 +25,7 @@ const linksNavbar = [
   {
     id: 3,
     label: 'Категории',
-    to: '/categories',
+    to: '../categories',
     icon: 'streamline:interface-dashboard-layout-square-app-application-dashboard-home-layout-square',
     text: 'Категории',
   },
