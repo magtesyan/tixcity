@@ -10,7 +10,7 @@
 const linksNavbar = [
   {
     id: 1,
-    label: 'Домой',
+    label: 'Домойs',
     to: '/',
     icon: 'streamline:home-3',
     text: 'Вернуться на главную страницу',
